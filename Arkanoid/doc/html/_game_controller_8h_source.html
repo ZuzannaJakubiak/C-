@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Arkanoid: Plik źródłowy src/Input/GameController.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Arkanoid
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_25af87635f61d97ebff867d1c53b4626.html">Input</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">GameController.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef INPUT_GAMECONTROLLER_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define INPUT_GAMECONTROLLER_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">using</span> InputKey = uint8_t;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">using</span> InputState = uint8_t;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">using</span> InputAction = std::function&lt;void(uint32_t dt, InputState)&gt;;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="struct_button_action.html">   30</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_button_action.html">ButtonAction</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;InputKey key; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_button_action.html#a24f4e4c7dcda455ea1101edeadaf073f">   33</a></span>&#160;InputAction <a class="code" href="struct_button_action.html#a24f4e4c7dcda455ea1101edeadaf073f">action</a>; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_game_controller.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_game_controller.html">GameController</a></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_game_controller.html#a7d72ff3f639acb68578e20fee3649b42">GameController</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    InputAction <a class="code" href="class_game_controller.html#ab74de93bb13539fc91ecf155a3dc580f">GetActionForKey</a>(InputKey key);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_game_controller.html#ada079a2e9d938a6fa425b6de00a5deba">AddInputActionForKey</a>(<span class="keyword">const</span> <a class="code" href="struct_button_action.html">ButtonAction</a>&amp; buttonAction);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">//void ClearAll();</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_game_controller.html#aee4be105ccc79d46a7d95dc824ac0f3f">Init</a>(InputAction quitAction);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_game_controller.html#a0d419fce964add94e0657429e711b4a9">Update</a>(uint32_t dt);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_game_controller.html#a9d73bd563568bfad3806d6ae6627f78e">SetGameController</a>(<a class="code" href="class_game_controller.html">GameController</a>* controller);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_game_controller.html#a3dac925d836bbdf7c495ac4ca5a02021">IsPressed</a>(InputState state);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">static</span> InputKey <a class="code" href="class_game_controller.html#aac147afe7bca7b2e43722e1268589039">ActionKey</a>();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">static</span> InputKey <a class="code" href="class_game_controller.html#a933408aecc52e66bbbfb485635b0c6e1">LeftKey</a>();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keyword">static</span> InputKey <a class="code" href="class_game_controller.html#add22885cf420b3b16b30c70baa184645">RightKey</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> ClearAll();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    std::vector&lt;ButtonAction&gt; mButtonActions; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    InputAction mQuit; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="class_game_controller.html">GameController</a>* mnoptrCurrentController; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;};</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INPUT_GAMECONTROLLER_H_ */</span><span class="preprocessor"></span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_game_controller_html_a0d419fce964add94e0657429e711b4a9"><div class="ttname"><a href="class_game_controller.html#a0d419fce964add94e0657429e711b4a9">GameController::Update</a></div><div class="ttdeci">void Update(uint32_t dt)</div><div class="ttdoc">Metoda, ktore aktualizuje GameController, obslugując dane wejsciowe i wywolując odpowiednie akcje.</div><div class="ttdef"><b>Definition:</b> GameController.cpp:58</div></div>
+<div class="ttc" id="aclass_game_controller_html_add22885cf420b3b16b30c70baa184645"><div class="ttname"><a href="class_game_controller.html#add22885cf420b3b16b30c70baa184645">GameController::RightKey</a></div><div class="ttdeci">static InputKey RightKey()</div><div class="ttdoc">Zwraca klucz powiazany z prawym klawiszem.</div><div class="ttdef"><b>Definition:</b> GameController.cpp:47</div></div>
+<div class="ttc" id="aclass_game_controller_html_a3dac925d836bbdf7c495ac4ca5a02021"><div class="ttname"><a href="class_game_controller.html#a3dac925d836bbdf7c495ac4ca5a02021">GameController::IsPressed</a></div><div class="ttdeci">static bool IsPressed(InputState state)</div><div class="ttdoc">Metoda ktora sprawdza szy przycisk jest wcisniety.</div><div class="ttdef"><b>Definition:</b> GameController.cpp:31</div></div>
+<div class="ttc" id="aclass_game_controller_html_a933408aecc52e66bbbfb485635b0c6e1"><div class="ttname"><a href="class_game_controller.html#a933408aecc52e66bbbfb485635b0c6e1">GameController::LeftKey</a></div><div class="ttdeci">static InputKey LeftKey()</div><div class="ttdoc">Zwraca klucz powiazany z lewym klawiszem.</div><div class="ttdef"><b>Definition:</b> GameController.cpp:42</div></div>
+<div class="ttc" id="aclass_game_controller_html"><div class="ttname"><a href="class_game_controller.html">GameController</a></div><div class="ttdoc">Klasa GameController obsluguje dane wejsciowe uzytkownika.</div><div class="ttdef"><b>Definition:</b> GameController.h:41</div></div>
+<div class="ttc" id="aclass_game_controller_html_ab74de93bb13539fc91ecf155a3dc580f"><div class="ttname"><a href="class_game_controller.html#ab74de93bb13539fc91ecf155a3dc580f">GameController::GetActionForKey</a></div><div class="ttdeci">InputAction GetActionForKey(InputKey key)</div><div class="ttdoc">Metoda, ktora pobiera akcje skojarzona z danym kluczem.</div><div class="ttdef"><b>Definition:</b> GameController.cpp:9</div></div>
+<div class="ttc" id="aclass_game_controller_html_aee4be105ccc79d46a7d95dc824ac0f3f"><div class="ttname"><a href="class_game_controller.html#aee4be105ccc79d46a7d95dc824ac0f3f">GameController::Init</a></div><div class="ttdeci">void Init(InputAction quitAction)</div><div class="ttdoc">Metoda, ktora usuwa wszystkie powiazania klawisz-akcja z GameController.</div><div class="ttdef"><b>Definition:</b> GameController.cpp:53</div></div>
+<div class="ttc" id="aclass_game_controller_html_ada079a2e9d938a6fa425b6de00a5deba"><div class="ttname"><a href="class_game_controller.html#ada079a2e9d938a6fa425b6de00a5deba">GameController::AddInputActionForKey</a></div><div class="ttdeci">void AddInputActionForKey(const ButtonAction &amp;buttonAction)</div><div class="ttdoc">Metoda, ktora kojarzy dana akcje z danym kluczem.</div><div class="ttdef"><b>Definition:</b> GameController.cpp:22</div></div>
+<div class="ttc" id="aclass_game_controller_html_a7d72ff3f639acb68578e20fee3649b42"><div class="ttname"><a href="class_game_controller.html#a7d72ff3f639acb68578e20fee3649b42">GameController::GameController</a></div><div class="ttdeci">GameController()</div><div class="ttdoc">Konstruktor.</div><div class="ttdef"><b>Definition:</b> GameController.cpp:4</div></div>
+<div class="ttc" id="aclass_game_controller_html_a9d73bd563568bfad3806d6ae6627f78e"><div class="ttname"><a href="class_game_controller.html#a9d73bd563568bfad3806d6ae6627f78e">GameController::SetGameController</a></div><div class="ttdeci">void SetGameController(GameController *controller)</div><div class="ttdoc">Metoda ktora ustawia bieżący GameController na dany kontroler.</div><div class="ttdef"><b>Definition:</b> GameController.cpp:87</div></div>
+<div class="ttc" id="astruct_button_action_html_a24f4e4c7dcda455ea1101edeadaf073f"><div class="ttname"><a href="struct_button_action.html#a24f4e4c7dcda455ea1101edeadaf073f">ButtonAction::action</a></div><div class="ttdeci">InputAction action</div><div class="ttdef"><b>Definition:</b> GameController.h:33</div></div>
+<div class="ttc" id="astruct_button_action_html"><div class="ttname"><a href="struct_button_action.html">ButtonAction</a></div><div class="ttdoc">Struktura reprezentujaca klucz i akcje powiazane z przyciskiem.</div><div class="ttdef"><b>Definition:</b> GameController.h:31</div></div>
+<div class="ttc" id="aclass_game_controller_html_aac147afe7bca7b2e43722e1268589039"><div class="ttname"><a href="class_game_controller.html#aac147afe7bca7b2e43722e1268589039">GameController::ActionKey</a></div><div class="ttdeci">static InputKey ActionKey()</div><div class="ttdoc">Zwraca klucz skojarzony z klawiszem akcji.</div><div class="ttdef"><b>Definition:</b> GameController.cpp:36</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Arkanoid: Plik źródłowy src/Shapes/Line2D.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Arkanoid
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5d5aca294192735486ce905e259c31ed.html">Shapes</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Line2D.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SHAPES_LINE2D_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SHAPES_LINE2D_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Vec2D.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_line2_d.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_line2_d.html">Line2D</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_line2_d.html#ad5c2ddbfd029ac9589741df466e7599a">Line2D</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_line2_d.html#ad5c2ddbfd029ac9589741df466e7599a">Line2D</a>(<span class="keywordtype">float</span> x0, <span class="keywordtype">float</span> y0, <span class="keywordtype">float</span> x1, <span class="keywordtype">float</span> y1);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_line2_d.html#ad5c2ddbfd029ac9589741df466e7599a">Line2D</a>(<span class="keyword">const</span> <a class="code" href="class_vec2_d.html">Vec2D</a>&amp; p0, <span class="keyword">const</span> <a class="code" href="class_vec2_d.html">Vec2D</a>&amp; p1);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_line2_d.html#aafc214d9eb0aeb04f661061db243bd68">   44</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="class_vec2_d.html">Vec2D</a>&amp; <a class="code" href="class_line2_d.html#aafc214d9eb0aeb04f661061db243bd68">GetP0</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> mP0;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_line2_d.html#af77f3d0fdad9d05b22dc7fc7f9104b73">   50</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="class_vec2_d.html">Vec2D</a>&amp; <a class="code" href="class_line2_d.html#af77f3d0fdad9d05b22dc7fc7f9104b73">GetP1</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> mP1;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_line2_d.html#a3cd44baf3c46f32a935c823f33185996">   56</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_line2_d.html#a3cd44baf3c46f32a935c823f33185996">SetP0</a>(<span class="keyword">const</span> <a class="code" href="class_vec2_d.html">Vec2D</a>&amp; p0) {mP0 = p0;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_line2_d.html#ab93d06303ac2a3cf17bd994d25f00126">   62</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_line2_d.html#ab93d06303ac2a3cf17bd994d25f00126">SetP1</a>(<span class="keyword">const</span> <a class="code" href="class_vec2_d.html">Vec2D</a>&amp; p1) {mP1 = p1;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_line2_d.html#ae89f19f72fb9e7a1fec7d46ffe63445d">operator==</a>(<span class="keyword">const</span> <a class="code" href="class_line2_d.html">Line2D</a>&amp; line) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_line2_d.html#a06c3a50e3e4388cea5e4f13ea4953c95">MinDistanceFrom</a>(<span class="keyword">const</span> <a class="code" href="class_vec2_d.html">Vec2D</a>&amp; p, <span class="keywordtype">bool</span> limitToSegment = <span class="keyword">false</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="class_vec2_d.html">Vec2D</a> <a class="code" href="class_line2_d.html#a9d85166f94784886a9d30a9cfd85fe53">ClosestPoint</a>(<span class="keyword">const</span> <a class="code" href="class_vec2_d.html">Vec2D</a>&amp; p, <span class="keywordtype">bool</span> limitToSegment = <span class="keyword">false</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_line2_d.html#a6e292ac500bf63f8d25f7d92e7ea87ea">Length</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="class_vec2_d.html">Vec2D</a> mP0;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="class_vec2_d.html">Vec2D</a> mP1;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SHAPES_LINE2D_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_line2_d_html_ab93d06303ac2a3cf17bd994d25f00126"><div class="ttname"><a href="class_line2_d.html#ab93d06303ac2a3cf17bd994d25f00126">Line2D::SetP1</a></div><div class="ttdeci">void SetP1(const Vec2D &amp;p1)</div><div class="ttdoc">Metoda ustawiajaca drugi punky linii.</div><div class="ttdef"><b>Definition:</b> Line2D.h:62</div></div>
+<div class="ttc" id="aclass_line2_d_html"><div class="ttname"><a href="class_line2_d.html">Line2D</a></div><div class="ttdoc">Klasa reprezntujaca linie 2D zdefiniowana przez dwa punkty, zapewnia metody do ustawiania oraz uzyski...</div><div class="ttdef"><b>Definition:</b> Line2D.h:16</div></div>
+<div class="ttc" id="aclass_line2_d_html_ae89f19f72fb9e7a1fec7d46ffe63445d"><div class="ttname"><a href="class_line2_d.html#ae89f19f72fb9e7a1fec7d46ffe63445d">Line2D::operator==</a></div><div class="ttdeci">bool operator==(const Line2D &amp;line) const</div><div class="ttdoc">Metoda sprawdzajaca rownosc linii z inna.</div><div class="ttdef"><b>Definition:</b> Line2D.cpp:19</div></div>
+<div class="ttc" id="aclass_line2_d_html_a3cd44baf3c46f32a935c823f33185996"><div class="ttname"><a href="class_line2_d.html#a3cd44baf3c46f32a935c823f33185996">Line2D::SetP0</a></div><div class="ttdeci">void SetP0(const Vec2D &amp;p0)</div><div class="ttdoc">Metoda ustawiajaca pierwszy punky linii.</div><div class="ttdef"><b>Definition:</b> Line2D.h:56</div></div>
+<div class="ttc" id="aclass_vec2_d_html"><div class="ttname"><a href="class_vec2_d.html">Vec2D</a></div><div class="ttdoc">Klasa 2D vector, z podstawowymi operacjami matematycznym, takimi jak dodawanie, odejmowanie,...</div><div class="ttdef"><b>Definition:</b> Vec2D.h:25</div></div>
+<div class="ttc" id="aclass_line2_d_html_a06c3a50e3e4388cea5e4f13ea4953c95"><div class="ttname"><a href="class_line2_d.html#a06c3a50e3e4388cea5e4f13ea4953c95">Line2D::MinDistanceFrom</a></div><div class="ttdeci">float MinDistanceFrom(const Vec2D &amp;p, bool limitToSegment=false) const</div><div class="ttdoc">Metoda wyznaczajaca minimalna odleglosc od punktu do linii.</div><div class="ttdef"><b>Definition:</b> Line2D.cpp:24</div></div>
+<div class="ttc" id="aclass_line2_d_html_a6e292ac500bf63f8d25f7d92e7ea87ea"><div class="ttname"><a href="class_line2_d.html#a6e292ac500bf63f8d25f7d92e7ea87ea">Line2D::Length</a></div><div class="ttdeci">float Length() const</div><div class="ttdoc">Metoda wyznaczajaca dlugosc linii.</div><div class="ttdef"><b>Definition:</b> Line2D.cpp:50</div></div>
+<div class="ttc" id="aclass_line2_d_html_ad5c2ddbfd029ac9589741df466e7599a"><div class="ttname"><a href="class_line2_d.html#ad5c2ddbfd029ac9589741df466e7599a">Line2D::Line2D</a></div><div class="ttdeci">Line2D()</div><div class="ttdoc">Konstruktor domyslny.</div><div class="ttdef"><b>Definition:</b> Line2D.cpp:4</div></div>
+<div class="ttc" id="aclass_line2_d_html_aafc214d9eb0aeb04f661061db243bd68"><div class="ttname"><a href="class_line2_d.html#aafc214d9eb0aeb04f661061db243bd68">Line2D::GetP0</a></div><div class="ttdeci">const Vec2D &amp; GetP0() const</div><div class="ttdoc">Metoda sprawdzajaca pierwszy punky linii.</div><div class="ttdef"><b>Definition:</b> Line2D.h:44</div></div>
+<div class="ttc" id="aclass_line2_d_html_af77f3d0fdad9d05b22dc7fc7f9104b73"><div class="ttname"><a href="class_line2_d.html#af77f3d0fdad9d05b22dc7fc7f9104b73">Line2D::GetP1</a></div><div class="ttdeci">const Vec2D &amp; GetP1() const</div><div class="ttdoc">Metoda sprawdzajaca drugi punky linii.</div><div class="ttdef"><b>Definition:</b> Line2D.h:50</div></div>
+<div class="ttc" id="aclass_line2_d_html_a9d85166f94784886a9d30a9cfd85fe53"><div class="ttname"><a href="class_line2_d.html#a9d85166f94784886a9d30a9cfd85fe53">Line2D::ClosestPoint</a></div><div class="ttdeci">Vec2D ClosestPoint(const Vec2D &amp;p, bool limitToSegment=false) const</div><div class="ttdoc">Metoda wyznaczjaca najblizszy punkt na linii do danego punktu.</div><div class="ttdef"><b>Definition:</b> Line2D.cpp:29</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

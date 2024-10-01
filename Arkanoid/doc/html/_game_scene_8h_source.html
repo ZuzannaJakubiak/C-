@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Arkanoid: Plik źródłowy src/Scenes/GameScene.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Arkanoid
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d665af80335f773f8bfcf2f56b3f3e8a.html">Scenes</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">GameScene.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SCENES_GAMESCENE_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SCENES_GAMESCENE_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;BreakOut.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;GameController.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_game_scene.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_game_scene.html">GameScene</a>{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<a class="code" href="class_game_scene.html#a265c5bde1b934ffac622c79a7fbfec5c">GameScene</a>(std::unique_ptr&lt;BreakOut&gt; optrGame);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_game_scene.html#a1a376181eb5813dabd26687823d03387">   26</a></span>&#160;<span class="keyword">virtual</span> <a class="code" href="class_game_scene.html#a1a376181eb5813dabd26687823d03387">~GameScene</a>() {}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_game_scene.html#a0ed06e4578a96910725641fb1a74d958">Init</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_game_scene.html#a69e493c838707f6d03c70bed91080233">Update</a>(uint32_t dt);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_game_scene.html#aafbf8632a7b4798406d7b8ce97ebae81">Draw</a>(<a class="code" href="class_screen.html">Screen</a>&amp; screen);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_game_scene.html#a87be7fdcac52a44af30d355371f3b9ed">   49</a></span>&#160;<a class="code" href="class_game_controller.html">GameController</a>* <a class="code" href="class_game_scene.html#a87be7fdcac52a44af30d355371f3b9ed">GetGameController</a>() {<span class="keywordflow">return</span> &amp;<a class="code" href="class_game_scene.html#a77dc8b72d15937b0ddef3a145ad6b763">mGameController</a>;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;std::unique_ptr&lt;BreakOut&gt; mGame; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_game_scene.html#a77dc8b72d15937b0ddef3a145ad6b763">   55</a></span>&#160;<a class="code" href="class_game_controller.html">GameController</a> <a class="code" href="class_game_scene.html#a77dc8b72d15937b0ddef3a145ad6b763">mGameController</a>; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SCENES_GAMESCENE_H_ */</span><span class="preprocessor"></span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_game_scene_html"><div class="ttname"><a href="class_game_scene.html">GameScene</a></div><div class="ttdoc">Klasa reprezentujaca scene gry.</div><div class="ttdef"><b>Definition:</b> GameScene.h:13</div></div>
+<div class="ttc" id="aclass_game_scene_html_a69e493c838707f6d03c70bed91080233"><div class="ttname"><a href="class_game_scene.html#a69e493c838707f6d03c70bed91080233">GameScene::Update</a></div><div class="ttdeci">virtual void Update(uint32_t dt)</div><div class="ttdoc">Metoda aktualizujaca GameScene.</div><div class="ttdef"><b>Definition:</b> GameScene.cpp:14</div></div>
+<div class="ttc" id="aclass_game_scene_html_a1a376181eb5813dabd26687823d03387"><div class="ttname"><a href="class_game_scene.html#a1a376181eb5813dabd26687823d03387">GameScene::~GameScene</a></div><div class="ttdeci">virtual ~GameScene()</div><div class="ttdoc">Wirtualny destruktor klasy GameScene.</div><div class="ttdef"><b>Definition:</b> GameScene.h:26</div></div>
+<div class="ttc" id="aclass_game_scene_html_a0ed06e4578a96910725641fb1a74d958"><div class="ttname"><a href="class_game_scene.html#a0ed06e4578a96910725641fb1a74d958">GameScene::Init</a></div><div class="ttdeci">virtual void Init()</div><div class="ttdoc">Metoda inicjujaca GameScene.</div><div class="ttdef"><b>Definition:</b> GameScene.cpp:9</div></div>
+<div class="ttc" id="aclass_game_scene_html_a77dc8b72d15937b0ddef3a145ad6b763"><div class="ttname"><a href="class_game_scene.html#a77dc8b72d15937b0ddef3a145ad6b763">GameScene::mGameController</a></div><div class="ttdeci">GameController mGameController</div><div class="ttdef"><b>Definition:</b> GameScene.h:55</div></div>
+<div class="ttc" id="aclass_game_scene_html_aafbf8632a7b4798406d7b8ce97ebae81"><div class="ttname"><a href="class_game_scene.html#aafbf8632a7b4798406d7b8ce97ebae81">GameScene::Draw</a></div><div class="ttdeci">virtual void Draw(Screen &amp;screen)</div><div class="ttdoc">Metoda, ktora rysuje GameScene na podanym ekranie.</div><div class="ttdef"><b>Definition:</b> GameScene.cpp:19</div></div>
+<div class="ttc" id="aclass_game_controller_html"><div class="ttname"><a href="class_game_controller.html">GameController</a></div><div class="ttdoc">Klasa GameController obsluguje dane wejsciowe uzytkownika.</div><div class="ttdef"><b>Definition:</b> GameController.h:41</div></div>
+<div class="ttc" id="aclass_screen_html"><div class="ttname"><a href="class_screen.html">Screen</a></div><div class="ttdoc">Klasa Screen zapewnia interfejs do rysowania ksztaltow i obrazow 2D na ekranie przy uzyciu biblioteki...</div><div class="ttdef"><b>Definition:</b> Screen.h:32</div></div>
+<div class="ttc" id="aclass_game_scene_html_a87be7fdcac52a44af30d355371f3b9ed"><div class="ttname"><a href="class_game_scene.html#a87be7fdcac52a44af30d355371f3b9ed">GameScene::GetGameController</a></div><div class="ttdeci">GameController * GetGameController()</div><div class="ttdoc">Metoda pobierajaca GameController dla GameScene.</div><div class="ttdef"><b>Definition:</b> GameScene.h:49</div></div>
+<div class="ttc" id="aclass_game_scene_html_a265c5bde1b934ffac622c79a7fbfec5c"><div class="ttname"><a href="class_game_scene.html#a265c5bde1b934ffac622c79a7fbfec5c">GameScene::GameScene</a></div><div class="ttdeci">GameScene(std::unique_ptr&lt; BreakOut &gt; optrGame)</div><div class="ttdoc">Konstruktor.</div><div class="ttdef"><b>Definition:</b> GameScene.cpp:4</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

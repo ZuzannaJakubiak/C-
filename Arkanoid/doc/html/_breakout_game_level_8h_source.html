@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Arkanoid: Plik źródłowy src/Games/BreakOut/BreakoutGameLevel.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Arkanoid
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c1d028e99427bd8df0a9e524a3361934.html">Games</a></li><li class="navelem"><a class="el" href="dir_9b41a1cf67ffd0861142a1f7bf92e8c7.html">BreakOut</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BreakoutGameLevel.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GAMES_BREAKOUT_BREAKOUTGAMELEVEL_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GAMES_BREAKOUT_BREAKOUTGAMELEVEL_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Block.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_screen.html">Screen</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span><a class="code" href="class_ball.html">Ball</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span><a class="code" href="class_a_a_rectangle.html">AARectangle</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="struct_layout_block.html">   15</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_layout_block.html">LayoutBlock</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">char</span> symbol = <span class="charliteral">&#39;-&#39;</span>; <span class="comment">//**&lt; Symbol bloku */</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">int</span> hp = 0; <span class="comment">//**&lt; Hp dla bloku */</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_color.html">Color</a> color = <a class="code" href="class_color.html#aeda97541296441f1e45666030c7431aa">Color::Black</a>(); <span class="comment">//**&lt; Kolor bloku */</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_breakout_game_level.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_breakout_game_level.html">BreakoutGameLevel</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_breakout_game_level.html#a7a26c392007eaf79980b85bd1a148b5b">BreakoutGameLevel</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_breakout_game_level.html#a628158e9604d98e50879837754079613">Load</a>(<span class="keyword">const</span> std::vector&lt;Block&gt;&amp; blocks);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_breakout_game_level.html#ae274879856b36a931c1a7dce04df602c">Update</a>(uint32_t dt, <a class="code" href="class_ball.html">Ball</a>&amp; ball);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_breakout_game_level.html#ac742131d84180a0366ba5b330a0328ae">Draw</a>(<a class="code" href="class_screen.html">Screen</a>&amp; screen);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_breakout_game_level.html#abd4684b7d8a7e41b7adb83bb019c0fd6">IsLevelComplete</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">static</span> std::vector&lt;BreakoutGameLevel&gt; <a class="code" href="class_breakout_game_level.html#ad900b1bad1db79d0d57ed7f76c6fb893">LoadLevelsFromFile</a>(<span class="keyword">const</span> std::string&amp; filePath);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> BLOCK_WIDTH = 16; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> BLOCK_HEIGHT = 8; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">//  void CreateDefaultLevel(const AARectangle&amp; boundary);</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    std::vector&lt;Block&gt; mBlocks; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GAMES_BREAKOUT_BREAKOUTGAMELEVEL_H_ */</span><span class="preprocessor"></span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_color_html"><div class="ttname"><a href="class_color.html">Color</a></div><div class="ttdoc">Klasa reprezentujaca kolor w formacie RGBA.</div><div class="ttdef"><b>Definition:</b> Color.h:13</div></div>
+<div class="ttc" id="aclass_color_html_aeda97541296441f1e45666030c7431aa"><div class="ttname"><a href="class_color.html#aeda97541296441f1e45666030c7431aa">Color::Black</a></div><div class="ttdeci">static Color Black()</div><div class="ttdoc">Zwraca kolor czarny.</div><div class="ttdef"><b>Definition:</b> Color.h:32</div></div>
+<div class="ttc" id="aclass_breakout_game_level_html_a628158e9604d98e50879837754079613"><div class="ttname"><a href="class_breakout_game_level.html#a628158e9604d98e50879837754079613">BreakoutGameLevel::Load</a></div><div class="ttdeci">void Load(const std::vector&lt; Block &gt; &amp;blocks)</div><div class="ttdoc">Zaladowanie levelu z danymi blokami.</div><div class="ttdef"><b>Definition:</b> BreakoutGameLevel.cpp:19</div></div>
+<div class="ttc" id="aclass_breakout_game_level_html_abd4684b7d8a7e41b7adb83bb019c0fd6"><div class="ttname"><a href="class_breakout_game_level.html#abd4684b7d8a7e41b7adb83bb019c0fd6">BreakoutGameLevel::IsLevelComplete</a></div><div class="ttdeci">bool IsLevelComplete() const</div><div class="ttdoc">Sprawdzenie czy level jest ukonczony.</div><div class="ttdef"><b>Definition:</b> BreakoutGameLevel.cpp:85</div></div>
+<div class="ttc" id="aclass_breakout_game_level_html_ae274879856b36a931c1a7dce04df602c"><div class="ttname"><a href="class_breakout_game_level.html#ae274879856b36a931c1a7dce04df602c">BreakoutGameLevel::Update</a></div><div class="ttdeci">void Update(uint32_t dt, Ball &amp;ball)</div><div class="ttdoc">Aktualizacja poziomu.</div><div class="ttdef"><b>Definition:</b> BreakoutGameLevel.cpp:25</div></div>
+<div class="ttc" id="aclass_ball_html"><div class="ttname"><a href="class_ball.html">Ball</a></div><div class="ttdoc">Klasa Ball reprezentujaca pilke w grze.</div><div class="ttdef"><b>Definition:</b> Ball.h:23</div></div>
+<div class="ttc" id="aclass_screen_html"><div class="ttname"><a href="class_screen.html">Screen</a></div><div class="ttdoc">Klasa Screen zapewnia interfejs do rysowania ksztaltow i obrazow 2D na ekranie przy uzyciu biblioteki...</div><div class="ttdef"><b>Definition:</b> Screen.h:32</div></div>
+<div class="ttc" id="astruct_layout_block_html"><div class="ttname"><a href="struct_layout_block.html">LayoutBlock</a></div><div class="ttdoc">Struktura do przechowywania informacji o komendzie.</div><div class="ttdef"><b>Definition:</b> BreakoutGameLevel.h:16</div></div>
+<div class="ttc" id="aclass_breakout_game_level_html_a7a26c392007eaf79980b85bd1a148b5b"><div class="ttname"><a href="class_breakout_game_level.html#a7a26c392007eaf79980b85bd1a148b5b">BreakoutGameLevel::BreakoutGameLevel</a></div><div class="ttdeci">BreakoutGameLevel()</div><div class="ttdoc">Konstruktor.</div><div class="ttdef"><b>Definition:</b> BreakoutGameLevel.cpp:13</div></div>
+<div class="ttc" id="aclass_breakout_game_level_html_ac742131d84180a0366ba5b330a0328ae"><div class="ttname"><a href="class_breakout_game_level.html#ac742131d84180a0366ba5b330a0328ae">BreakoutGameLevel::Draw</a></div><div class="ttdeci">void Draw(Screen &amp;screen)</div><div class="ttdoc">Rysowanie levelu.</div><div class="ttdef"><b>Definition:</b> BreakoutGameLevel.cpp:73</div></div>
+<div class="ttc" id="aclass_breakout_game_level_html"><div class="ttname"><a href="class_breakout_game_level.html">BreakoutGameLevel</a></div><div class="ttdoc">Klasa BreakoutGameLevel reprezentuje level w grze.</div><div class="ttdef"><b>Definition:</b> BreakoutGameLevel.h:27</div></div>
+<div class="ttc" id="aclass_a_a_rectangle_html"><div class="ttname"><a href="class_a_a_rectangle.html">AARectangle</a></div><div class="ttdoc">Klasa AARectangle reprezentuje wyrownany do osi ksztalt prostokata, dziedziczy po klasie Shapes.</div><div class="ttdef"><b>Definition:</b> AARectangle.h:11</div></div>
+<div class="ttc" id="aclass_breakout_game_level_html_ad900b1bad1db79d0d57ed7f76c6fb893"><div class="ttname"><a href="class_breakout_game_level.html#ad900b1bad1db79d0d57ed7f76c6fb893">BreakoutGameLevel::LoadLevelsFromFile</a></div><div class="ttdeci">static std::vector&lt; BreakoutGameLevel &gt; LoadLevelsFromFile(const std::string &amp;filePath)</div><div class="ttdoc">Ladowanie leveli z pliku.</div><div class="ttdef"><b>Definition:</b> BreakoutGameLevel.cpp:112</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

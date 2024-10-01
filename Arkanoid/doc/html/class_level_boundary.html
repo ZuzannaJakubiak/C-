@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Arkanoid: Dokumentacja klasy LevelBoundary</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Arkanoid
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="class_level_boundary-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy LevelBoundary</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa <a class="el" href="class_level_boundary.html" title="Klasa LevelBoundary reprezentuje granice w grze. Zawiera AARectangle, reprezentujacy granice....">LevelBoundary</a> reprezentuje granice w grze. Zawiera <a class="el" href="class_a_a_rectangle.html" title="Klasa AARectangle reprezentuje wyrownany do osi ksztalt prostokata, dziedziczy po klasie Shapes.">AARectangle</a>, reprezentujacy granice. Posiada rowniez funkcje sprawdzenia czy dany obiekt <a class="el" href="class_ball.html" title="Klasa Ball reprezentujaca pilke w grze.">Ball</a> nie zderzyl sie z granica.  
+ <a href="class_level_boundary.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_level_boundary_8h_source.html">LevelBoundary.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:ae6b532b793a3d51c5cdfc92056945a6d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_level_boundary.html#ae6b532b793a3d51c5cdfc92056945a6d">LevelBoundary</a> (const <a class="el" href="class_a_a_rectangle.html">AARectangle</a> &amp;boundary)</td></tr>
+<tr class="memdesc:ae6b532b793a3d51c5cdfc92056945a6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor, jako argument przymuje <a class="el" href="class_a_a_rectangle.html" title="Klasa AARectangle reprezentuje wyrownany do osi ksztalt prostokata, dziedziczy po klasie Shapes.">AARectangle</a>.  <a href="class_level_boundary.html#ae6b532b793a3d51c5cdfc92056945a6d">Więcej...</a><br /></td></tr>
+<tr class="separator:ae6b532b793a3d51c5cdfc92056945a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d6871c0d9697fb0a3e37bc2ea2cfdca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_level_boundary.html#a4d6871c0d9697fb0a3e37bc2ea2cfdca">HasCollided</a> (const <a class="el" href="class_ball.html">Ball</a> &amp;ball, <a class="el" href="struct_boundary_edge.html">BoundaryEdge</a> &amp;edge)</td></tr>
+<tr class="memdesc:a4d6871c0d9697fb0a3e37bc2ea2cfdca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza czy obiet <a class="el" href="class_ball.html" title="Klasa Ball reprezentujaca pilke w grze.">Ball</a> zderzyl sie z granica.  <a href="class_level_boundary.html#a4d6871c0d9697fb0a3e37bc2ea2cfdca">Więcej...</a><br /></td></tr>
+<tr class="separator:a4d6871c0d9697fb0a3e37bc2ea2cfdca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a9a1bbc8ea122e77a7f313db6dee651"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_a_a_rectangle.html">AARectangle</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_level_boundary.html#a1a9a1bbc8ea122e77a7f313db6dee651">GetAARectangle</a> () const</td></tr>
+<tr class="memdesc:a1a9a1bbc8ea122e77a7f313db6dee651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wyznaczenie <a class="el" href="class_a_a_rectangle.html" title="Klasa AARectangle reprezentuje wyrownany do osi ksztalt prostokata, dziedziczy po klasie Shapes.">AARectangle</a> reprezentujacego granice levelu.  <a href="class_level_boundary.html#a1a9a1bbc8ea122e77a7f313db6dee651">Więcej...</a><br /></td></tr>
+<tr class="separator:a1a9a1bbc8ea122e77a7f313db6dee651"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa <a class="el" href="class_level_boundary.html" title="Klasa LevelBoundary reprezentuje granice w grze. Zawiera AARectangle, reprezentujacy granice....">LevelBoundary</a> reprezentuje granice w grze. Zawiera <a class="el" href="class_a_a_rectangle.html" title="Klasa AARectangle reprezentuje wyrownany do osi ksztalt prostokata, dziedziczy po klasie Shapes.">AARectangle</a>, reprezentujacy granice. Posiada rowniez funkcje sprawdzenia czy dany obiekt <a class="el" href="class_ball.html" title="Klasa Ball reprezentujaca pilke w grze.">Ball</a> nie zderzyl sie z granica. </p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="ae6b532b793a3d51c5cdfc92056945a6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6b532b793a3d51c5cdfc92056945a6d">&#9670;&nbsp;</a></span>LevelBoundary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LevelBoundary::LevelBoundary </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_a_a_rectangle.html">AARectangle</a> &amp;&#160;</td>
+          <td class="paramname"><em>boundary</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor, jako argument przymuje <a class="el" href="class_a_a_rectangle.html" title="Klasa AARectangle reprezentuje wyrownany do osi ksztalt prostokata, dziedziczy po klasie Shapes.">AARectangle</a>. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">boundary</td><td><a class="el" href="class_a_a_rectangle.html" title="Klasa AARectangle reprezentuje wyrownany do osi ksztalt prostokata, dziedziczy po klasie Shapes.">AARectangle</a> that reprezentujacy granice. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a1a9a1bbc8ea122e77a7f313db6dee651"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a9a1bbc8ea122e77a7f313db6dee651">&#9670;&nbsp;</a></span>GetAARectangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_a_a_rectangle.html">AARectangle</a>&amp; LevelBoundary::GetAARectangle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wyznaczenie <a class="el" href="class_a_a_rectangle.html" title="Klasa AARectangle reprezentuje wyrownany do osi ksztalt prostokata, dziedziczy po klasie Shapes.">AARectangle</a> reprezentujacego granice levelu. </p>
+<dl class="section return"><dt>Zwraca</dt><dd><a class="el" href="class_a_a_rectangle.html" title="Klasa AARectangle reprezentuje wyrownany do osi ksztalt prostokata, dziedziczy po klasie Shapes.">AARectangle</a> reprezentujacy granice levelu. </dd></dl>
+
+</div>
+</div>
+<a id="a4d6871c0d9697fb0a3e37bc2ea2cfdca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d6871c0d9697fb0a3e37bc2ea2cfdca">&#9670;&nbsp;</a></span>HasCollided()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LevelBoundary::HasCollided </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_ball.html">Ball</a> &amp;&#160;</td>
+          <td class="paramname"><em>ball</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_boundary_edge.html">BoundaryEdge</a> &amp;&#160;</td>
+          <td class="paramname"><em>edge</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sprawdza czy obiet <a class="el" href="class_ball.html" title="Klasa Ball reprezentujaca pilke w grze.">Ball</a> zderzyl sie z granica. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ball</td><td>Obiekt <a class="el" href="class_ball.html" title="Klasa Ball reprezentujaca pilke w grze.">Ball</a> (pilka). </td></tr>
+    <tr><td class="paramname">edge</td><td>Krawedz z ktora zderzyla sie pilka. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Prawda jezeli pilka zderzyla sie z krawedzia, falsz w innym przypadku. </dd></dl>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>src/Games/BreakOut/<a class="el" href="_level_boundary_8h_source.html">LevelBoundary.h</a></li>
+<li>src/Games/BreakOut/LevelBoundary.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

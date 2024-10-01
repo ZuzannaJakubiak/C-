@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Arkanoid: Plik źródłowy src/Graphics/ScreenBuffer.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Arkanoid
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_3419e189e460663ec2c964233bf8dcd6.html">Graphics</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ScreenBuffer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GRAPHICS_SCREENBUFFER_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GRAPHICS_SCREENBUFFER_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;Color.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="class_color.html">Color</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">struct </span>SDL_Surface;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_screen_buffer.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_screen_buffer.html">ScreenBuffer</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_screen_buffer.html#ad3ca0a31284a5a131fc40f96bc114e2c">ScreenBuffer</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_screen_buffer.html#ab02ed21e84f062052b42f37bdaf7b614">   26</a></span>&#160;    <a class="code" href="class_screen_buffer.html#ab02ed21e84f062052b42f37bdaf7b614">ScreenBuffer</a>(<span class="keyword">const</span> <a class="code" href="class_screen_buffer.html">ScreenBuffer</a>&amp; screenBuffer);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_screen_buffer.html#a29781d8a75a587d757bb0510d92b8b94">~ScreenBuffer</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_screen_buffer.html#a28fc94ef21c28b131948be2aa8153206">   37</a></span>&#160;    <a class="code" href="class_screen_buffer.html">ScreenBuffer</a>&amp; <a class="code" href="class_screen_buffer.html#a28fc94ef21c28b131948be2aa8153206">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_screen_buffer.html">ScreenBuffer</a>&amp; screenBuffer);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_screen_buffer.html#a91f8d3b3a4b430e1035ebf4ff0b89875">Init</a>(uint32_t format, uint32_t width, uint32_t height);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_screen_buffer.html#a16f0e84321050f10ed7794837205e202">   51</a></span>&#160;    <span class="keyword">inline</span> SDL_Surface * <a class="code" href="class_screen_buffer.html#a16f0e84321050f10ed7794837205e202">GetSurface</a>() {<span class="keywordflow">return</span> mSurface;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_screen_buffer.html#a6a87f049dcd55adeb296418ac463915a">Clear</a>(<span class="keyword">const</span> <a class="code" href="class_color.html">Color</a>&amp; c = <a class="code" href="class_color.html#aeda97541296441f1e45666030c7431aa">Color::Black</a>());</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_screen_buffer.html#a3cb5236f63fdd464390967dca55f4959">SetPixel</a>(<span class="keyword">const</span> <a class="code" href="class_color.html">Color</a>&amp; color, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    SDL_Surface * mSurface; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    uint32_t GetIndex(<span class="keywordtype">int</span> row, <span class="keywordtype">int</span> column);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GRAPHICS_SCREENBUFFER_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_screen_buffer_html_a91f8d3b3a4b430e1035ebf4ff0b89875"><div class="ttname"><a href="class_screen_buffer.html#a91f8d3b3a4b430e1035ebf4ff0b89875">ScreenBuffer::Init</a></div><div class="ttdeci">void Init(uint32_t format, uint32_t width, uint32_t height)</div><div class="ttdoc">Inicjuje ScreenBuffer z podanym formatem, szerokoscia i wysokoscia.</div><div class="ttdef"><b>Definition:</b> ScreenBuffer.cpp:27</div></div>
+<div class="ttc" id="aclass_color_html"><div class="ttname"><a href="class_color.html">Color</a></div><div class="ttdoc">Klasa reprezentujaca kolor w formacie RGBA.</div><div class="ttdef"><b>Definition:</b> Color.h:13</div></div>
+<div class="ttc" id="aclass_screen_buffer_html_ad3ca0a31284a5a131fc40f96bc114e2c"><div class="ttname"><a href="class_screen_buffer.html#ad3ca0a31284a5a131fc40f96bc114e2c">ScreenBuffer::ScreenBuffer</a></div><div class="ttdeci">ScreenBuffer()</div><div class="ttdoc">Konstruktor.</div><div class="ttdef"><b>Definition:</b> ScreenBuffer.cpp:14</div></div>
+<div class="ttc" id="aclass_color_html_aeda97541296441f1e45666030c7431aa"><div class="ttname"><a href="class_color.html#aeda97541296441f1e45666030c7431aa">Color::Black</a></div><div class="ttdeci">static Color Black()</div><div class="ttdoc">Zwraca kolor czarny.</div><div class="ttdef"><b>Definition:</b> Color.h:32</div></div>
+<div class="ttc" id="aclass_screen_buffer_html_a16f0e84321050f10ed7794837205e202"><div class="ttname"><a href="class_screen_buffer.html#a16f0e84321050f10ed7794837205e202">ScreenBuffer::GetSurface</a></div><div class="ttdeci">SDL_Surface * GetSurface()</div><div class="ttdoc">Funkcja gettera dla powierzchni SDL ScreenBuffera.</div><div class="ttdef"><b>Definition:</b> ScreenBuffer.h:51</div></div>
+<div class="ttc" id="aclass_screen_buffer_html_a28fc94ef21c28b131948be2aa8153206"><div class="ttname"><a href="class_screen_buffer.html#a28fc94ef21c28b131948be2aa8153206">ScreenBuffer::operator=</a></div><div class="ttdeci">ScreenBuffer &amp; operator=(const ScreenBuffer &amp;screenBuffer)</div><div class="ttdoc">Operator przypisania dla klasy ScreenBuffer.</div></div>
+<div class="ttc" id="aclass_screen_buffer_html_ab02ed21e84f062052b42f37bdaf7b614"><div class="ttname"><a href="class_screen_buffer.html#ab02ed21e84f062052b42f37bdaf7b614">ScreenBuffer::ScreenBuffer</a></div><div class="ttdeci">ScreenBuffer(const ScreenBuffer &amp;screenBuffer)</div><div class="ttdoc">Konstruktor kopiujacy.</div></div>
+<div class="ttc" id="aclass_screen_buffer_html_a29781d8a75a587d757bb0510d92b8b94"><div class="ttname"><a href="class_screen_buffer.html#a29781d8a75a587d757bb0510d92b8b94">ScreenBuffer::~ScreenBuffer</a></div><div class="ttdeci">~ScreenBuffer()</div><div class="ttdoc">Destruktor.</div><div class="ttdef"><b>Definition:</b> ScreenBuffer.cpp:19</div></div>
+<div class="ttc" id="aclass_screen_buffer_html_a6a87f049dcd55adeb296418ac463915a"><div class="ttname"><a href="class_screen_buffer.html#a6a87f049dcd55adeb296418ac463915a">ScreenBuffer::Clear</a></div><div class="ttdeci">void Clear(const Color &amp;c=Color::Black())</div><div class="ttdoc">Czysci ScreenBuffer na dany kolor.</div><div class="ttdef"><b>Definition:</b> ScreenBuffer.cpp:34</div></div>
+<div class="ttc" id="aclass_screen_buffer_html_a3cb5236f63fdd464390967dca55f4959"><div class="ttname"><a href="class_screen_buffer.html#a3cb5236f63fdd464390967dca55f4959">ScreenBuffer::SetPixel</a></div><div class="ttdeci">void SetPixel(const Color &amp;color, int x, int y)</div><div class="ttdoc">Ustawia piksel w danej pozycji na dany kolor.</div><div class="ttdef"><b>Definition:</b> ScreenBuffer.cpp:43</div></div>
+<div class="ttc" id="aclass_screen_buffer_html"><div class="ttname"><a href="class_screen_buffer.html">ScreenBuffer</a></div><div class="ttdoc">Klasa przechowujaca pixele ekranu przed tym jak sa wyswietlane.</div><div class="ttdef"><b>Definition:</b> ScreenBuffer.h:15</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

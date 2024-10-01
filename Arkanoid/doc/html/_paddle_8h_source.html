@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Arkanoid: Plik źródłowy src/Games/BreakOut/Paddle.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Arkanoid
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c1d028e99427bd8df0a9e524a3361934.html">Games</a></li><li class="navelem"><a class="el" href="dir_9b41a1cf67ffd0861142a1f7bf92e8c7.html">BreakOut</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Paddle.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef GAMES_BREAKOUT_PADDLE_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define GAMES_BREAKOUT_PADDLE_H_</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;Excluder.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_screen.html">Screen</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span><a class="code" href="class_ball.html">Ball</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">enum</span> PaddleDirection</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    NONE = 0, </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    LEFT, </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    RIGHT </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    };</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_paddle.html">   28</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_paddle.html">Paddle</a>: <span class="keyword">public</span> <a class="code" href="class_excluder.html">Excluder</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_paddle.html#adda961d557eac38f04a107adfd3433b7">   35</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> uint32_t <a class="code" href="class_paddle.html#adda961d557eac38f04a107adfd3433b7">PADDLE_WIDTH</a> = 50;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_paddle.html#af5ff023a9395cb0fd0d49f14dc3ef569">   40</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> uint32_t <a class="code" href="class_paddle.html#af5ff023a9395cb0fd0d49f14dc3ef569">PADDLE_HEIGHT</a> = 10;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_paddle.html#a48fd7122b1d62392e768c55894b7dd96">Init</a>(<span class="keyword">const</span> <a class="code" href="class_a_a_rectangle.html">AARectangle</a>&amp; rect, <span class="keyword">const</span> <a class="code" href="class_a_a_rectangle.html">AARectangle</a>&amp; boundary);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_paddle.html#ac1e9b4aa6b13c9e34d25325b3102d51a">Update</a>(uint32_t dt, <a class="code" href="class_ball.html">Ball</a>&amp; ball);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_paddle.html#aca3634bd14ebbfddd634867b4493e028">Draw</a>(<a class="code" href="class_screen.html">Screen</a>&amp; screen);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_paddle.html#a86a7ac7489352114fff51aa8e69261f9">Bounce</a>(<a class="code" href="class_ball.html">Ball</a>&amp; ball);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_paddle.html#a467b3d4eb07e613980535740279587c5">   73</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_paddle.html#a467b3d4eb07e613980535740279587c5">IsMovingLeft</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> mDirection == PaddleDirection::LEFT;}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_paddle.html#a4dd8215fb6c07a787ef118ee839bb6ad">   79</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_paddle.html#a4dd8215fb6c07a787ef118ee839bb6ad">IsMovingRight</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> mDirection == PaddleDirection::RIGHT;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_paddle.html#a0fb35c7c5a1f65fa8b63bf7984b050fd">   85</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_paddle.html#a0fb35c7c5a1f65fa8b63bf7984b050fd">SetMovementDirection</a>(PaddleDirection dir) {mDirection = dir;}</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">//inline void StopMovement() {mDirection = PaddleDirection::NONE;}</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    PaddleDirection mDirection; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="class_a_a_rectangle.html">AARectangle</a> mBoundary; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> VELOCITY = 100.0f; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> CORNER_BOUNCE_AMT = 0.2f; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GAMES_BREAKOUT_PADDLE_H_ */</span><span class="preprocessor"></span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_paddle_html_a0fb35c7c5a1f65fa8b63bf7984b050fd"><div class="ttname"><a href="class_paddle.html#a0fb35c7c5a1f65fa8b63bf7984b050fd">Paddle::SetMovementDirection</a></div><div class="ttdeci">void SetMovementDirection(PaddleDirection dir)</div><div class="ttdoc">Ustawia kierunek ruchu belki.</div><div class="ttdef"><b>Definition:</b> Paddle.h:85</div></div>
+<div class="ttc" id="aclass_paddle_html_af5ff023a9395cb0fd0d49f14dc3ef569"><div class="ttname"><a href="class_paddle.html#af5ff023a9395cb0fd0d49f14dc3ef569">Paddle::PADDLE_HEIGHT</a></div><div class="ttdeci">static const uint32_t PADDLE_HEIGHT</div><div class="ttdoc">Wysokosc belki w pixelach.</div><div class="ttdef"><b>Definition:</b> Paddle.h:40</div></div>
+<div class="ttc" id="aclass_paddle_html_a86a7ac7489352114fff51aa8e69261f9"><div class="ttname"><a href="class_paddle.html#a86a7ac7489352114fff51aa8e69261f9">Paddle::Bounce</a></div><div class="ttdeci">bool Bounce(Ball &amp;ball)</div><div class="ttdoc">Okresla czy pilka odbila sie od belki.</div><div class="ttdef"><b>Definition:</b> Paddle.cpp:58</div></div>
+<div class="ttc" id="aclass_paddle_html_ac1e9b4aa6b13c9e34d25325b3102d51a"><div class="ttname"><a href="class_paddle.html#ac1e9b4aa6b13c9e34d25325b3102d51a">Paddle::Update</a></div><div class="ttdeci">void Update(uint32_t dt, Ball &amp;ball)</div><div class="ttdoc">Aktualizacja belki.</div><div class="ttdef"><b>Definition:</b> Paddle.cpp:13</div></div>
+<div class="ttc" id="aclass_paddle_html_aca3634bd14ebbfddd634867b4493e028"><div class="ttname"><a href="class_paddle.html#aca3634bd14ebbfddd634867b4493e028">Paddle::Draw</a></div><div class="ttdeci">void Draw(Screen &amp;screen)</div><div class="ttdoc">Rysuje belke na ekranie.</div><div class="ttdef"><b>Definition:</b> Paddle.cpp:53</div></div>
+<div class="ttc" id="aclass_ball_html"><div class="ttname"><a href="class_ball.html">Ball</a></div><div class="ttdoc">Klasa Ball reprezentujaca pilke w grze.</div><div class="ttdef"><b>Definition:</b> Ball.h:23</div></div>
+<div class="ttc" id="aclass_screen_html"><div class="ttname"><a href="class_screen.html">Screen</a></div><div class="ttdoc">Klasa Screen zapewnia interfejs do rysowania ksztaltow i obrazow 2D na ekranie przy uzyciu biblioteki...</div><div class="ttdef"><b>Definition:</b> Screen.h:32</div></div>
+<div class="ttc" id="aclass_paddle_html_a4dd8215fb6c07a787ef118ee839bb6ad"><div class="ttname"><a href="class_paddle.html#a4dd8215fb6c07a787ef118ee839bb6ad">Paddle::IsMovingRight</a></div><div class="ttdeci">bool IsMovingRight() const</div><div class="ttdoc">Okresla czy belka porusza sie w prawo.</div><div class="ttdef"><b>Definition:</b> Paddle.h:79</div></div>
+<div class="ttc" id="aclass_excluder_html"><div class="ttname"><a href="class_excluder.html">Excluder</a></div><div class="ttdoc">Klasa Excluder reprezentuje obiekt, ktorego mozna uzyc do psrawdzania kolizji z innymi obiektami.</div><div class="ttdef"><b>Definition:</b> Excluder.h:39</div></div>
+<div class="ttc" id="aclass_paddle_html"><div class="ttname"><a href="class_paddle.html">Paddle</a></div><div class="ttdoc">Klasa Paddle reprezentuje belke w grze Breakout.</div><div class="ttdef"><b>Definition:</b> Paddle.h:29</div></div>
+<div class="ttc" id="aclass_paddle_html_adda961d557eac38f04a107adfd3433b7"><div class="ttname"><a href="class_paddle.html#adda961d557eac38f04a107adfd3433b7">Paddle::PADDLE_WIDTH</a></div><div class="ttdeci">static const uint32_t PADDLE_WIDTH</div><div class="ttdoc">Szerokosc belki w pixelach.</div><div class="ttdef"><b>Definition:</b> Paddle.h:35</div></div>
+<div class="ttc" id="aclass_paddle_html_a467b3d4eb07e613980535740279587c5"><div class="ttname"><a href="class_paddle.html#a467b3d4eb07e613980535740279587c5">Paddle::IsMovingLeft</a></div><div class="ttdeci">bool IsMovingLeft() const</div><div class="ttdoc">Okresla czy belka porusza sie w lewo.</div><div class="ttdef"><b>Definition:</b> Paddle.h:73</div></div>
+<div class="ttc" id="aclass_paddle_html_a48fd7122b1d62392e768c55894b7dd96"><div class="ttname"><a href="class_paddle.html#a48fd7122b1d62392e768c55894b7dd96">Paddle::Init</a></div><div class="ttdeci">void Init(const AARectangle &amp;rect, const AARectangle &amp;boundary)</div><div class="ttdoc">Inicjalizacja belki.</div><div class="ttdef"><b>Definition:</b> Paddle.cpp:6</div></div>
+<div class="ttc" id="aclass_a_a_rectangle_html"><div class="ttname"><a href="class_a_a_rectangle.html">AARectangle</a></div><div class="ttdoc">Klasa AARectangle reprezentuje wyrownany do osi ksztalt prostokata, dziedziczy po klasie Shapes.</div><div class="ttdef"><b>Definition:</b> AARectangle.h:11</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

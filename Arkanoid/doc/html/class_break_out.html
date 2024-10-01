@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Arkanoid: Dokumentacja klasy BreakOut</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Arkanoid
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="class_break_out-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy BreakOut</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa Breakout jest odpowiedzialna za inicjalizacje, odswiezanie i rysowanie gry. Obsluguje tez stan gryi ilosc zyc..  
+ <a href="class_break_out.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_break_out_8h_source.html">BreakOut.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:abdf8d6f57d38183108863830057efd95"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_break_out.html#abdf8d6f57d38183108863830057efd95">Init</a> (<a class="el" href="class_game_controller.html">GameController</a> &amp;controller)</td></tr>
+<tr class="memdesc:abdf8d6f57d38183108863830057efd95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicjuje gre z danym <a class="el" href="class_game_controller.html" title="Klasa GameController obsluguje dane wejsciowe uzytkownika.">GameController</a>.  <a href="class_break_out.html#abdf8d6f57d38183108863830057efd95">Więcej...</a><br /></td></tr>
+<tr class="separator:abdf8d6f57d38183108863830057efd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4fc0588411714b8c6c5355d15ba6f4d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_break_out.html#ac4fc0588411714b8c6c5355d15ba6f4d">Update</a> (uint32_t dt)</td></tr>
+<tr class="memdesc:ac4fc0588411714b8c6c5355d15ba6f4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Odswieza z gre co dany czas dt.  <a href="class_break_out.html#ac4fc0588411714b8c6c5355d15ba6f4d">Więcej...</a><br /></td></tr>
+<tr class="separator:ac4fc0588411714b8c6c5355d15ba6f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd5ee726b6b2803b370ee01899d30f38"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_break_out.html#afd5ee726b6b2803b370ee01899d30f38">Draw</a> (<a class="el" href="class_screen.html">Screen</a> &amp;screen)</td></tr>
+<tr class="memdesc:afd5ee726b6b2803b370ee01899d30f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rysuje gre na ekranie.  <a href="class_break_out.html#afd5ee726b6b2803b370ee01899d30f38">Więcej...</a><br /></td></tr>
+<tr class="separator:afd5ee726b6b2803b370ee01899d30f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81d73dd0569cca8cdb92375aa07a0a62"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_break_out.html#a81d73dd0569cca8cdb92375aa07a0a62">GetName</a> () const</td></tr>
+<tr class="memdesc:a81d73dd0569cca8cdb92375aa07a0a62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter nazwy gry.  <a href="class_break_out.html#a81d73dd0569cca8cdb92375aa07a0a62">Więcej...</a><br /></td></tr>
+<tr class="separator:a81d73dd0569cca8cdb92375aa07a0a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa Breakout jest odpowiedzialna za inicjalizacje, odswiezanie i rysowanie gry. Obsluguje tez stan gryi ilosc zyc.. </p>
+</div><h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="afd5ee726b6b2803b370ee01899d30f38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd5ee726b6b2803b370ee01899d30f38">&#9670;&nbsp;</a></span>Draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BreakOut::Draw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_screen.html">Screen</a> &amp;&#160;</td>
+          <td class="paramname"><em>screen</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rysuje gre na ekranie. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">screen</td><td>Ekran do narysowania gry. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a81d73dd0569cca8cdb92375aa07a0a62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81d73dd0569cca8cdb92375aa07a0a62">&#9670;&nbsp;</a></span>GetName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; BreakOut::GetName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Getter nazwy gry. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Nazwa gry. </dd></dl>
+
+</div>
+</div>
+<a id="abdf8d6f57d38183108863830057efd95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdf8d6f57d38183108863830057efd95">&#9670;&nbsp;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BreakOut::Init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_controller.html">GameController</a> &amp;&#160;</td>
+          <td class="paramname"><em>controller</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Inicjuje gre z danym <a class="el" href="class_game_controller.html" title="Klasa GameController obsluguje dane wejsciowe uzytkownika.">GameController</a>. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">controller</td><td>Dany <a class="el" href="class_game_controller.html" title="Klasa GameController obsluguje dane wejsciowe uzytkownika.">GameController</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac4fc0588411714b8c6c5355d15ba6f4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4fc0588411714b8c6c5355d15ba6f4d">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BreakOut::Update </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Odswieza z gre co dany czas dt. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dt</td><td>Czas. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>src/Games/BreakOut/<a class="el" href="_break_out_8h_source.html">BreakOut.h</a></li>
+<li>src/Games/BreakOut/BreakOut.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

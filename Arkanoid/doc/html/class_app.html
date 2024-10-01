@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Arkanoid: Dokumentacja klasy App</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Arkanoid
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pub-static-methods">Statyczne metody publiczne</a> &#124;
+<a href="class_app-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy App</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Definicja klasy dla glownej aplikacji. Klasa <a class="el" href="class_app.html" title="Definicja klasy dla glownej aplikacji. Klasa App jest odpowiedzialna za inicjowanie,...">App</a> jest odpowiedzialna za inicjowanie, uruchamianie i zarzadzanie scenami gry. Sledzi rowniez szerokosc i wysokosc ekranu oraz InputController.  
+ <a href="class_app.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_app_8h_source.html">App.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:ab62de3d8850cb4397a51d69c62075bdd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app.html#ab62de3d8850cb4397a51d69c62075bdd">Init</a> (uint32_t width, uint32_t height, uint32_t mag)</td></tr>
+<tr class="memdesc:ab62de3d8850cb4397a51d69c62075bdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicjuje aplikacje z okresloną szerokoscia, wysokoscią i powiekszeniem.  <a href="class_app.html#ab62de3d8850cb4397a51d69c62075bdd">Więcej...</a><br /></td></tr>
+<tr class="separator:ab62de3d8850cb4397a51d69c62075bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78d24016da98422fabb55b10dbfe3d72"><td class="memItemLeft" align="right" valign="top"><a id="a78d24016da98422fabb55b10dbfe3d72"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app.html#a78d24016da98422fabb55b10dbfe3d72">Run</a> ()</td></tr>
+<tr class="memdesc:a78d24016da98422fabb55b10dbfe3d72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uruchamia aplikacje. <br /></td></tr>
+<tr class="separator:a78d24016da98422fabb55b10dbfe3d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7981997ad6647e4eb057f013f16cae3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app.html#af7981997ad6647e4eb057f013f16cae3">Width</a> () const</td></tr>
+<tr class="memdesc:af7981997ad6647e4eb057f013f16cae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pobiera szerokosc ekranu.  <a href="class_app.html#af7981997ad6647e4eb057f013f16cae3">Więcej...</a><br /></td></tr>
+<tr class="separator:af7981997ad6647e4eb057f013f16cae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61d91250f732b54382f95984244df4d4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app.html#a61d91250f732b54382f95984244df4d4">Height</a> () const</td></tr>
+<tr class="memdesc:a61d91250f732b54382f95984244df4d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pobiera wysokosc ekranu.  <a href="class_app.html#a61d91250f732b54382f95984244df4d4">Więcej...</a><br /></td></tr>
+<tr class="separator:a61d91250f732b54382f95984244df4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27314657f0de8dcbbc6a9cb61211156f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app.html#a27314657f0de8dcbbc6a9cb61211156f">PushScene</a> (std::unique_ptr&lt; <a class="el" href="class_game_scene.html">GameScene</a> &gt; scene)</td></tr>
+<tr class="memdesc:a27314657f0de8dcbbc6a9cb61211156f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Umieszczenie sceny na stosie.  <a href="class_app.html#a27314657f0de8dcbbc6a9cb61211156f">Więcej...</a><br /></td></tr>
+<tr class="separator:a27314657f0de8dcbbc6a9cb61211156f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa882e50df27fa9a20d4dfd2798c7f627"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_scene.html">GameScene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app.html#aa882e50df27fa9a20d4dfd2798c7f627">TopScene</a> ()</td></tr>
+<tr class="memdesc:aa882e50df27fa9a20d4dfd2798c7f627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pobiera najwyzsza scenę ze stosu.  <a href="class_app.html#aa882e50df27fa9a20d4dfd2798c7f627">Więcej...</a><br /></td></tr>
+<tr class="separator:aa882e50df27fa9a20d4dfd2798c7f627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Statyczne metody publiczne</h2></td></tr>
+<tr class="memitem:a72651a3fcf243432eb81f5ce7d4a8387"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_app.html">App</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app.html#a72651a3fcf243432eb81f5ce7d4a8387">Singleton</a> ()</td></tr>
+<tr class="memdesc:a72651a3fcf243432eb81f5ce7d4a8387"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pobiera pojedyczne wystapienie klasy <a class="el" href="class_app.html" title="Definicja klasy dla glownej aplikacji. Klasa App jest odpowiedzialna za inicjowanie,...">App</a>.  <a href="class_app.html#a72651a3fcf243432eb81f5ce7d4a8387">Więcej...</a><br /></td></tr>
+<tr class="separator:a72651a3fcf243432eb81f5ce7d4a8387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Definicja klasy dla glownej aplikacji. Klasa <a class="el" href="class_app.html" title="Definicja klasy dla glownej aplikacji. Klasa App jest odpowiedzialna za inicjowanie,...">App</a> jest odpowiedzialna za inicjowanie, uruchamianie i zarzadzanie scenami gry. Sledzi rowniez szerokosc i wysokosc ekranu oraz InputController. </p>
+</div><h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a61d91250f732b54382f95984244df4d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61d91250f732b54382f95984244df4d4">&#9670;&nbsp;</a></span>Height()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t App::Height </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pobiera wysokosc ekranu. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Wysokosc ekranu. </dd></dl>
+
+</div>
+</div>
+<a id="ab62de3d8850cb4397a51d69c62075bdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab62de3d8850cb4397a51d69c62075bdd">&#9670;&nbsp;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool App::Init </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>mag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicjuje aplikacje z okresloną szerokoscia, wysokoscią i powiekszeniem. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>Szerokosc. </td></tr>
+    <tr><td class="paramname">height</td><td>Wysokosc. </td></tr>
+    <tr><td class="paramname">mag</td><td>Powiekszenie. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Prawda, jesli inicjalizacja zakonczyla się pomyslnie, w przeciwnym razie falsz. </dd></dl>
+
+</div>
+</div>
+<a id="a27314657f0de8dcbbc6a9cb61211156f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27314657f0de8dcbbc6a9cb61211156f">&#9670;&nbsp;</a></span>PushScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void App::PushScene </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="class_game_scene.html">GameScene</a> &gt;&#160;</td>
+          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Umieszczenie sceny na stosie. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scene</td><td>Scena. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a72651a3fcf243432eb81f5ce7d4a8387"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72651a3fcf243432eb81f5ce7d4a8387">&#9670;&nbsp;</a></span>Singleton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_app.html">App</a> &amp; App::Singleton </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pobiera pojedyczne wystapienie klasy <a class="el" href="class_app.html" title="Definicja klasy dla glownej aplikacji. Klasa App jest odpowiedzialna za inicjowanie,...">App</a>. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Instancja. </dd></dl>
+
+</div>
+</div>
+<a id="aa882e50df27fa9a20d4dfd2798c7f627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa882e50df27fa9a20d4dfd2798c7f627">&#9670;&nbsp;</a></span>TopScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game_scene.html">GameScene</a> * App::TopScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pobiera najwyzsza scenę ze stosu. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Ostatnia scena. </dd></dl>
+
+</div>
+</div>
+<a id="af7981997ad6647e4eb057f013f16cae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7981997ad6647e4eb057f013f16cae3">&#9670;&nbsp;</a></span>Width()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t App::Width </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pobiera szerokosc ekranu. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Szerokosc ekranu. </dd></dl>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>src/App/<a class="el" href="_app_8h_source.html">App.h</a></li>
+<li>src/App/App.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

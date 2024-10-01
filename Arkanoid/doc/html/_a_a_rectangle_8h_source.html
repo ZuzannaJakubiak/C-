@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Arkanoid: Plik źródłowy src/Shapes/AARectangle.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Arkanoid
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5d5aca294192735486ce905e259c31ed.html">Shapes</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">AARectangle.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SHAPES_AARECTANGLE_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SHAPES_AARECTANGLE_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Shapes.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_a_a_rectangle.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_a_a_rectangle.html">AARectangle</a>: <span class="keyword">public</span> <a class="code" href="class_shapes.html">Shapes</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_a_a_rectangle.html#a80df95fc4f73ab322572b0785ce79bb4">AARectangle</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_a_a_rectangle.html#a80df95fc4f73ab322572b0785ce79bb4">AARectangle</a>(<span class="keyword">const</span> <a class="code" href="class_vec2_d.html">Vec2D</a>&amp; topLeft, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> width, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> height);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_a_a_rectangle.html#a80df95fc4f73ab322572b0785ce79bb4">AARectangle</a>(<span class="keyword">const</span> <a class="code" href="class_vec2_d.html">Vec2D</a>&amp; topLeft, <span class="keyword">const</span> <a class="code" href="class_vec2_d.html">Vec2D</a>&amp; bottomRight);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_a_a_rectangle.html#ab0ab0bf27dc0b8e333582eef7bc4d3f4">   38</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_a_a_rectangle.html#ab0ab0bf27dc0b8e333582eef7bc4d3f4">SetTopLeftPoint</a>(<span class="keyword">const</span> <a class="code" href="class_vec2_d.html">Vec2D</a> topLeft) {<a class="code" href="class_shapes.html#aca717ac7d53cc51a626c2bd1b59605af">mPoints</a>[0] = topLeft;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_a_a_rectangle.html#a254127e2b7fa378cc1ba78a0d53fef22">   44</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_a_a_rectangle.html#a254127e2b7fa378cc1ba78a0d53fef22">SetBottomRightPoint</a>(<span class="keyword">const</span> <a class="code" href="class_vec2_d.html">Vec2D</a> bottomRight) {<a class="code" href="class_shapes.html#aca717ac7d53cc51a626c2bd1b59605af">mPoints</a>[1] = bottomRight;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_a_a_rectangle.html#a03e00d279ee1e21f3bf596f32e919f01">   50</a></span>&#160;    <a class="code" href="class_vec2_d.html">Vec2D</a> <a class="code" href="class_a_a_rectangle.html#a03e00d279ee1e21f3bf596f32e919f01">GetTopLeftPoint</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="class_shapes.html#aca717ac7d53cc51a626c2bd1b59605af">mPoints</a>[0];}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_a_a_rectangle.html#afd0d4456f0a4279e9ae3be3a13c5f942">   56</a></span>&#160;    <a class="code" href="class_vec2_d.html">Vec2D</a> <a class="code" href="class_a_a_rectangle.html#afd0d4456f0a4279e9ae3be3a13c5f942">GetBottomRightPoint</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="class_shapes.html#aca717ac7d53cc51a626c2bd1b59605af">mPoints</a>[1];}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_a_a_rectangle.html#a682aa633ae8207c58a695cce4ff24168">GetWidth</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_a_a_rectangle.html#a965b1fc51852d734bc6349e69065699c">GetHeight</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_a_a_rectangle.html#a003adf3a2b6bbd2d8644d59c89f9bdbc">MoveTo</a>(<span class="keyword">const</span> <a class="code" href="class_vec2_d.html">Vec2D</a>&amp; position);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_vec2_d.html">Vec2D</a> <a class="code" href="class_a_a_rectangle.html#a87326714bf26fbfbc5980fa978f94f22">GetCenterPoint</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_a_a_rectangle.html#a7a638f89dadd2c5a366212e5d76e1610">Intersects</a>(<span class="keyword">const</span> <a class="code" href="class_a_a_rectangle.html">AARectangle</a>&amp; otherRect) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_a_a_rectangle.html#a95c9a83fb66d03c7f271c2b90218d5e8">ContainsPoint</a>(<span class="keyword">const</span> <a class="code" href="class_vec2_d.html">Vec2D</a>&amp; point) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">virtual</span> std::vector&lt;Vec2D&gt; <a class="code" href="class_a_a_rectangle.html#ac213c1bb89a641bf88725b1394842614">GetPoints</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SHAPES_AARECTANGLE_H_ */</span><span class="preprocessor"></span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_a_a_rectangle_html_afd0d4456f0a4279e9ae3be3a13c5f942"><div class="ttname"><a href="class_a_a_rectangle.html#afd0d4456f0a4279e9ae3be3a13c5f942">AARectangle::GetBottomRightPoint</a></div><div class="ttdeci">Vec2D GetBottomRightPoint() const</div><div class="ttdoc">Metoda do wyznaczania dolnego prawego naroznika prostokata.</div><div class="ttdef"><b>Definition:</b> AARectangle.h:56</div></div>
+<div class="ttc" id="aclass_a_a_rectangle_html_a965b1fc51852d734bc6349e69065699c"><div class="ttname"><a href="class_a_a_rectangle.html#a965b1fc51852d734bc6349e69065699c">AARectangle::GetHeight</a></div><div class="ttdeci">float GetHeight() const</div><div class="ttdoc">Metoda do wyznaczania dlugosci prostokata.</div><div class="ttdef"><b>Definition:</b> AARectangle.cpp:28</div></div>
+<div class="ttc" id="aclass_a_a_rectangle_html_a254127e2b7fa378cc1ba78a0d53fef22"><div class="ttname"><a href="class_a_a_rectangle.html#a254127e2b7fa378cc1ba78a0d53fef22">AARectangle::SetBottomRightPoint</a></div><div class="ttdeci">void SetBottomRightPoint(const Vec2D bottomRight)</div><div class="ttdoc">Metoda do ustawiania dolnego prawego naroznika prostokata.</div><div class="ttdef"><b>Definition:</b> AARectangle.h:44</div></div>
+<div class="ttc" id="aclass_a_a_rectangle_html_ab0ab0bf27dc0b8e333582eef7bc4d3f4"><div class="ttname"><a href="class_a_a_rectangle.html#ab0ab0bf27dc0b8e333582eef7bc4d3f4">AARectangle::SetTopLeftPoint</a></div><div class="ttdeci">void SetTopLeftPoint(const Vec2D topLeft)</div><div class="ttdoc">Metoda do ustawiania gornego lewego naroznika prostokata.</div><div class="ttdef"><b>Definition:</b> AARectangle.h:38</div></div>
+<div class="ttc" id="aclass_a_a_rectangle_html_a03e00d279ee1e21f3bf596f32e919f01"><div class="ttname"><a href="class_a_a_rectangle.html#a03e00d279ee1e21f3bf596f32e919f01">AARectangle::GetTopLeftPoint</a></div><div class="ttdeci">Vec2D GetTopLeftPoint() const</div><div class="ttdoc">Metoda do wyznaczania gornego lewego naroznika prostokata.</div><div class="ttdef"><b>Definition:</b> AARectangle.h:50</div></div>
+<div class="ttc" id="aclass_shapes_html"><div class="ttname"><a href="class_shapes.html">Shapes</a></div><div class="ttdoc">Klasa bazowa, zapewnia mozliwosc uzyskania punktu srodkowego oraz wektora punktow tworzacych dany ksz...</div><div class="ttdef"><b>Definition:</b> Shapes.h:12</div></div>
+<div class="ttc" id="aclass_a_a_rectangle_html_a87326714bf26fbfbc5980fa978f94f22"><div class="ttname"><a href="class_a_a_rectangle.html#a87326714bf26fbfbc5980fa978f94f22">AARectangle::GetCenterPoint</a></div><div class="ttdeci">virtual Vec2D GetCenterPoint() const override</div><div class="ttdoc">Metoda do wyznaczenia srodka prostokata.</div><div class="ttdef"><b>Definition:</b> AARectangle.cpp:44</div></div>
+<div class="ttc" id="aclass_a_a_rectangle_html_a7a638f89dadd2c5a366212e5d76e1610"><div class="ttname"><a href="class_a_a_rectangle.html#a7a638f89dadd2c5a366212e5d76e1610">AARectangle::Intersects</a></div><div class="ttdeci">bool Intersects(const AARectangle &amp;otherRect) const</div><div class="ttdoc">Metoda sprawdzajaca czy prostokat przecina inny.</div><div class="ttdef"><b>Definition:</b> AARectangle.cpp:50</div></div>
+<div class="ttc" id="aclass_a_a_rectangle_html_a80df95fc4f73ab322572b0785ce79bb4"><div class="ttname"><a href="class_a_a_rectangle.html#a80df95fc4f73ab322572b0785ce79bb4">AARectangle::AARectangle</a></div><div class="ttdeci">AARectangle()</div><div class="ttdoc">Konstruktor domyslny.</div><div class="ttdef"><b>Definition:</b> AARectangle.cpp:5</div></div>
+<div class="ttc" id="aclass_shapes_html_aca717ac7d53cc51a626c2bd1b59605af"><div class="ttname"><a href="class_shapes.html#aca717ac7d53cc51a626c2bd1b59605af">Shapes::mPoints</a></div><div class="ttdeci">std::vector&lt; Vec2D &gt; mPoints</div><div class="ttdoc">Wektor punktow tworzacych ksztalt.</div><div class="ttdef"><b>Definition:</b> Shapes.h:42</div></div>
+<div class="ttc" id="aclass_vec2_d_html"><div class="ttname"><a href="class_vec2_d.html">Vec2D</a></div><div class="ttdoc">Klasa 2D vector, z podstawowymi operacjami matematycznym, takimi jak dodawanie, odejmowanie,...</div><div class="ttdef"><b>Definition:</b> Vec2D.h:25</div></div>
+<div class="ttc" id="aclass_a_a_rectangle_html_a95c9a83fb66d03c7f271c2b90218d5e8"><div class="ttname"><a href="class_a_a_rectangle.html#a95c9a83fb66d03c7f271c2b90218d5e8">AARectangle::ContainsPoint</a></div><div class="ttdeci">bool ContainsPoint(const Vec2D &amp;point) const</div><div class="ttdoc">Metoda sprawdzahaca czy punkt zawiera sie w prostokacie.</div><div class="ttdef"><b>Definition:</b> AARectangle.cpp:58</div></div>
+<div class="ttc" id="aclass_a_a_rectangle_html_a003adf3a2b6bbd2d8644d59c89f9bdbc"><div class="ttname"><a href="class_a_a_rectangle.html#a003adf3a2b6bbd2d8644d59c89f9bdbc">AARectangle::MoveTo</a></div><div class="ttdeci">void MoveTo(const Vec2D &amp;position)</div><div class="ttdoc">Metoda do przesuniecia prostokata do nowej pozycji.</div><div class="ttdef"><b>Definition:</b> AARectangle.cpp:33</div></div>
+<div class="ttc" id="aclass_a_a_rectangle_html_ac213c1bb89a641bf88725b1394842614"><div class="ttname"><a href="class_a_a_rectangle.html#ac213c1bb89a641bf88725b1394842614">AARectangle::GetPoints</a></div><div class="ttdeci">virtual std::vector&lt; Vec2D &gt; GetPoints() const override</div><div class="ttdoc">Metoda wyznaczajaca 4 wierzcholki prostokata.</div><div class="ttdef"><b>Definition:</b> AARectangle.cpp:69</div></div>
+<div class="ttc" id="aclass_a_a_rectangle_html"><div class="ttname"><a href="class_a_a_rectangle.html">AARectangle</a></div><div class="ttdoc">Klasa AARectangle reprezentuje wyrownany do osi ksztalt prostokata, dziedziczy po klasie Shapes.</div><div class="ttdef"><b>Definition:</b> AARectangle.h:11</div></div>
+<div class="ttc" id="aclass_a_a_rectangle_html_a682aa633ae8207c58a695cce4ff24168"><div class="ttname"><a href="class_a_a_rectangle.html#a682aa633ae8207c58a695cce4ff24168">AARectangle::GetWidth</a></div><div class="ttdeci">float GetWidth() const</div><div class="ttdoc">Metoda do wyznaczania szerokosci prostokata.</div><div class="ttdef"><b>Definition:</b> AARectangle.cpp:23</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

@@ -1,0 +1,814 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Arkanoid: Dokumentacja klasy Vec2D</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Arkanoid
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pub-static-attribs">Statyczne atrybuty publiczne</a> &#124;
+<a href="#friends">Przyjaciele</a> &#124;
+<a href="class_vec2_d-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy Vec2D</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa 2D vector, z podstawowymi operacjami matematycznym, takimi jak dodawanie, odejmowanie, mnozenie skalarne, metody do okreslenia wielkosci wektora, odleglosci miedzy wektorami, rotacji wektora wokol punktu.  
+ <a href="class_vec2_d.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_vec2_d_8h_source.html">Vec2D.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:aa3e3abb842bff81c10e8539c1689d578"><td class="memItemLeft" align="right" valign="top"><a id="aa3e3abb842bff81c10e8539c1689d578"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec2_d.html#aa3e3abb842bff81c10e8539c1689d578">Vec2D</a> ()</td></tr>
+<tr class="memdesc:aa3e3abb842bff81c10e8539c1689d578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda konstruujaca wektor o wspolrzednych (0,0) <br /></td></tr>
+<tr class="separator:aa3e3abb842bff81c10e8539c1689d578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e13a9fc4e117e175d57d51ed6955135"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec2_d.html#a5e13a9fc4e117e175d57d51ed6955135">Vec2D</a> (float x, float y)</td></tr>
+<tr class="memdesc:a5e13a9fc4e117e175d57d51ed6955135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda konstruujaca wektor o danych wspolrzednych.  <a href="class_vec2_d.html#a5e13a9fc4e117e175d57d51ed6955135">Więcej...</a><br /></td></tr>
+<tr class="separator:a5e13a9fc4e117e175d57d51ed6955135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c0dff924e226d7673900550f34b0f5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec2_d.html#a3c0dff924e226d7673900550f34b0f5a">SetX</a> (float x)</td></tr>
+<tr class="memdesc:a3c0dff924e226d7673900550f34b0f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda ustawiajace wspolrzedna x wektora.  <a href="class_vec2_d.html#a3c0dff924e226d7673900550f34b0f5a">Więcej...</a><br /></td></tr>
+<tr class="separator:a3c0dff924e226d7673900550f34b0f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af425b2746fe6ab145aa688c168712060"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec2_d.html#af425b2746fe6ab145aa688c168712060">SetY</a> (float y)</td></tr>
+<tr class="memdesc:af425b2746fe6ab145aa688c168712060"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda ustawiajace wspolrzedna y wektora.  <a href="class_vec2_d.html#af425b2746fe6ab145aa688c168712060">Więcej...</a><br /></td></tr>
+<tr class="separator:af425b2746fe6ab145aa688c168712060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afec6e3c16b312092e974dfb8f6d1ea54"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec2_d.html#afec6e3c16b312092e974dfb8f6d1ea54">GetX</a> () const</td></tr>
+<tr class="memdesc:afec6e3c16b312092e974dfb8f6d1ea54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda sprawdzajaca wspolrzedna x wektora.  <a href="class_vec2_d.html#afec6e3c16b312092e974dfb8f6d1ea54">Więcej...</a><br /></td></tr>
+<tr class="separator:afec6e3c16b312092e974dfb8f6d1ea54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45783dcf44a9b8224d8325cc608e5bbf"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec2_d.html#a45783dcf44a9b8224d8325cc608e5bbf">GetY</a> () const</td></tr>
+<tr class="memdesc:a45783dcf44a9b8224d8325cc608e5bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda sprawdzajaca wspolrzedna y wektora.  <a href="class_vec2_d.html#a45783dcf44a9b8224d8325cc608e5bbf">Więcej...</a><br /></td></tr>
+<tr class="separator:a45783dcf44a9b8224d8325cc608e5bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb0a037ea1421097bdab7306e2d33c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec2_d.html#aacb0a037ea1421097bdab7306e2d33c2">operator==</a> (const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;vec2) const</td></tr>
+<tr class="memdesc:aacb0a037ea1421097bdab7306e2d33c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda sprawdzajaca rownosc dwoch wektorow.  <a href="class_vec2_d.html#aacb0a037ea1421097bdab7306e2d33c2">Więcej...</a><br /></td></tr>
+<tr class="separator:aacb0a037ea1421097bdab7306e2d33c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f864cd649f86c8cddeb4bbda4537b09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vec2_d.html">Vec2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec2_d.html#a3f864cd649f86c8cddeb4bbda4537b09">operator-</a> () const</td></tr>
+<tr class="memdesc:a3f864cd649f86c8cddeb4bbda4537b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda do negacji wektora.  <a href="class_vec2_d.html#a3f864cd649f86c8cddeb4bbda4537b09">Więcej...</a><br /></td></tr>
+<tr class="separator:a3f864cd649f86c8cddeb4bbda4537b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c8f0fa268064f0c04d0c86c9bcf3b8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vec2_d.html">Vec2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec2_d.html#a4c8f0fa268064f0c04d0c86c9bcf3b8e">operator*</a> (float scale) const</td></tr>
+<tr class="memdesc:a4c8f0fa268064f0c04d0c86c9bcf3b8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda skalujaca wektor przez skalar.  <a href="class_vec2_d.html#a4c8f0fa268064f0c04d0c86c9bcf3b8e">Więcej...</a><br /></td></tr>
+<tr class="separator:a4c8f0fa268064f0c04d0c86c9bcf3b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8e3e58e042787192f412a0428adfbc9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vec2_d.html">Vec2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec2_d.html#ac8e3e58e042787192f412a0428adfbc9">operator/</a> (float scale) const</td></tr>
+<tr class="memdesc:ac8e3e58e042787192f412a0428adfbc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda dzielaca wektor przez skalar.  <a href="class_vec2_d.html#ac8e3e58e042787192f412a0428adfbc9">Więcej...</a><br /></td></tr>
+<tr class="separator:ac8e3e58e042787192f412a0428adfbc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a214cc6f1c62be23ebd2d334bdd4b0150"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vec2_d.html">Vec2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec2_d.html#a214cc6f1c62be23ebd2d334bdd4b0150">operator+</a> (const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;vec) const</td></tr>
+<tr class="memdesc:a214cc6f1c62be23ebd2d334bdd4b0150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda dodajaca dwa wektory.  <a href="class_vec2_d.html#a214cc6f1c62be23ebd2d334bdd4b0150">Więcej...</a><br /></td></tr>
+<tr class="separator:a214cc6f1c62be23ebd2d334bdd4b0150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9f536db724ff84dca77fe67e2ad9039"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vec2_d.html">Vec2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec2_d.html#aa9f536db724ff84dca77fe67e2ad9039">operator-</a> (const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;vec) const</td></tr>
+<tr class="memdesc:aa9f536db724ff84dca77fe67e2ad9039"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda odejmujaca dwa wektory.  <a href="class_vec2_d.html#aa9f536db724ff84dca77fe67e2ad9039">Więcej...</a><br /></td></tr>
+<tr class="separator:aa9f536db724ff84dca77fe67e2ad9039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77481b8be18f5ec34573c2bffe7e0a85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vec2_d.html">Vec2D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec2_d.html#a77481b8be18f5ec34573c2bffe7e0a85">operator-=</a> (const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;vec)</td></tr>
+<tr class="memdesc:a77481b8be18f5ec34573c2bffe7e0a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda odejmujaca wektor od aktualnego wektora.  <a href="class_vec2_d.html#a77481b8be18f5ec34573c2bffe7e0a85">Więcej...</a><br /></td></tr>
+<tr class="separator:a77481b8be18f5ec34573c2bffe7e0a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae94e70534ecb8818275e363b58c59801"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec2_d.html#ae94e70534ecb8818275e363b58c59801">Mag2</a> () const</td></tr>
+<tr class="memdesc:ae94e70534ecb8818275e363b58c59801"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wyznaczjaca kwadrat wielkosci wektora.  <a href="class_vec2_d.html#ae94e70534ecb8818275e363b58c59801">Więcej...</a><br /></td></tr>
+<tr class="separator:ae94e70534ecb8818275e363b58c59801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb63187a1fe5499b3f22e217b56355dc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec2_d.html#afb63187a1fe5499b3f22e217b56355dc">Mag</a> () const</td></tr>
+<tr class="memdesc:afb63187a1fe5499b3f22e217b56355dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wyznaczajaca wielkosc wektora.  <a href="class_vec2_d.html#afb63187a1fe5499b3f22e217b56355dc">Więcej...</a><br /></td></tr>
+<tr class="separator:afb63187a1fe5499b3f22e217b56355dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28ce5a931bb1f023140204a2113087f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vec2_d.html">Vec2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec2_d.html#a28ce5a931bb1f023140204a2113087f8">GetUnitVec</a> () const</td></tr>
+<tr class="memdesc:a28ce5a931bb1f023140204a2113087f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wyznaczajaca wektor jednostkowy o tym samym kierunku co aktualny wektor.  <a href="class_vec2_d.html#a28ce5a931bb1f023140204a2113087f8">Więcej...</a><br /></td></tr>
+<tr class="separator:a28ce5a931bb1f023140204a2113087f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d253fb5cb409ad82b059ba7faa14a73"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec2_d.html#a2d253fb5cb409ad82b059ba7faa14a73">Distance</a> (const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;vec) const</td></tr>
+<tr class="memdesc:a2d253fb5cb409ad82b059ba7faa14a73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wyznaczajaca odleglosc miedzy dwoma wektorami.  <a href="class_vec2_d.html#a2d253fb5cb409ad82b059ba7faa14a73">Więcej...</a><br /></td></tr>
+<tr class="separator:a2d253fb5cb409ad82b059ba7faa14a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f787f92f04e8054faab33d736ca098c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec2_d.html#a3f787f92f04e8054faab33d736ca098c">Dot</a> (const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;vec) const</td></tr>
+<tr class="memdesc:a3f787f92f04e8054faab33d736ca098c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wyznaczajaca iloczyn skalarny dwoch wektorow.  <a href="class_vec2_d.html#a3f787f92f04e8054faab33d736ca098c">Więcej...</a><br /></td></tr>
+<tr class="separator:a3f787f92f04e8054faab33d736ca098c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a485a06851793e9d135cfec9512ee75ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vec2_d.html">Vec2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec2_d.html#a485a06851793e9d135cfec9512ee75ff">ProjectOnto</a> (const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;vec2) const</td></tr>
+<tr class="memdesc:a485a06851793e9d135cfec9512ee75ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wyznaczajaca rzut wektora.  <a href="class_vec2_d.html#a485a06851793e9d135cfec9512ee75ff">Więcej...</a><br /></td></tr>
+<tr class="separator:a485a06851793e9d135cfec9512ee75ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f6235824b05ef3e89ea48cce1d1c2d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vec2_d.html">Vec2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec2_d.html#a9f6235824b05ef3e89ea48cce1d1c2d0">Reflect</a> (const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;normal) const</td></tr>
+<tr class="memdesc:a9f6235824b05ef3e89ea48cce1d1c2d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wyznaczajaca odbicie wektora wzgledem danej normalnej.  <a href="class_vec2_d.html#a9f6235824b05ef3e89ea48cce1d1c2d0">Więcej...</a><br /></td></tr>
+<tr class="separator:a9f6235824b05ef3e89ea48cce1d1c2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af062170ce8fdcb1a195d85d4f0850d21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec2_d.html#af062170ce8fdcb1a195d85d4f0850d21">Rotate</a> (float angle, const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;aroundPoint)</td></tr>
+<tr class="memdesc:af062170ce8fdcb1a195d85d4f0850d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda obracajaca aktualny wektor wokol punktu o podany kat.  <a href="class_vec2_d.html#af062170ce8fdcb1a195d85d4f0850d21">Więcej...</a><br /></td></tr>
+<tr class="separator:af062170ce8fdcb1a195d85d4f0850d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Statyczne atrybuty publiczne</h2></td></tr>
+<tr class="memitem:ab42724bbda6b56accba4c95017d3a743"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_vec2_d.html">Vec2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec2_d.html#ab42724bbda6b56accba4c95017d3a743">Zero</a></td></tr>
+<tr class="memdesc:ab42724bbda6b56accba4c95017d3a743"><td class="mdescLeft">&#160;</td><td class="mdescRight">Staly wektor o wsporzednych (0,0)  <a href="class_vec2_d.html#ab42724bbda6b56accba4c95017d3a743">Więcej...</a><br /></td></tr>
+<tr class="separator:ab42724bbda6b56accba4c95017d3a743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Przyjaciele</h2></td></tr>
+<tr class="memitem:a95a6aa08a18169f35455317234bf7c41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vec2_d.html">Vec2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec2_d.html#a95a6aa08a18169f35455317234bf7c41">operator*</a> (float scalar, const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;vec)</td></tr>
+<tr class="memdesc:a95a6aa08a18169f35455317234bf7c41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mnozenie skalara przez wektor.  <a href="class_vec2_d.html#a95a6aa08a18169f35455317234bf7c41">Więcej...</a><br /></td></tr>
+<tr class="separator:a95a6aa08a18169f35455317234bf7c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa 2D vector, z podstawowymi operacjami matematycznym, takimi jak dodawanie, odejmowanie, mnozenie skalarne, metody do okreslenia wielkosci wektora, odleglosci miedzy wektorami, rotacji wektora wokol punktu. </p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a5e13a9fc4e117e175d57d51ed6955135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e13a9fc4e117e175d57d51ed6955135">&#9670;&nbsp;</a></span>Vec2D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vec2D::Vec2D </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda konstruujaca wektor o danych wspolrzednych. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Wspolrzedna x wektorar </td></tr>
+    <tr><td class="paramname">y</td><td>Wspolrzedna y wektora </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a2d253fb5cb409ad82b059ba7faa14a73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d253fb5cb409ad82b059ba7faa14a73">&#9670;&nbsp;</a></span>Distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Vec2D::Distance </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;&#160;</td>
+          <td class="paramname"><em>vec</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda wyznaczajaca odleglosc miedzy dwoma wektorami. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>Wektor do ktorego mierzona jest odleglosc </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Odleglosc miedzy wektorami </dd></dl>
+
+</div>
+</div>
+<a id="a3f787f92f04e8054faab33d736ca098c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f787f92f04e8054faab33d736ca098c">&#9670;&nbsp;</a></span>Dot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Vec2D::Dot </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;&#160;</td>
+          <td class="paramname"><em>vec</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda wyznaczajaca iloczyn skalarny dwoch wektorow. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>Wektor z ktorym ma byc wyznaczony iloczyn skalarny </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Iloczyn skalarny </dd></dl>
+
+</div>
+</div>
+<a id="a28ce5a931bb1f023140204a2113087f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28ce5a931bb1f023140204a2113087f8">&#9670;&nbsp;</a></span>GetUnitVec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vec2_d.html">Vec2D</a> Vec2D::GetUnitVec </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda wyznaczajaca wektor jednostkowy o tym samym kierunku co aktualny wektor. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Wektor jednostkowy </dd></dl>
+
+</div>
+</div>
+<a id="afec6e3c16b312092e974dfb8f6d1ea54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afec6e3c16b312092e974dfb8f6d1ea54">&#9670;&nbsp;</a></span>GetX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Vec2D::GetX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda sprawdzajaca wspolrzedna x wektora. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Wspolrzedna x </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a45783dcf44a9b8224d8325cc608e5bbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45783dcf44a9b8224d8325cc608e5bbf">&#9670;&nbsp;</a></span>GetY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Vec2D::GetY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda sprawdzajaca wspolrzedna y wektora. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>Wspolrzedna y </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afb63187a1fe5499b3f22e217b56355dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb63187a1fe5499b3f22e217b56355dc">&#9670;&nbsp;</a></span>Mag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Vec2D::Mag </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda wyznaczajaca wielkosc wektora. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Wielkosc wektora </dd></dl>
+
+</div>
+</div>
+<a id="ae94e70534ecb8818275e363b58c59801"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae94e70534ecb8818275e363b58c59801">&#9670;&nbsp;</a></span>Mag2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Vec2D::Mag2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda wyznaczjaca kwadrat wielkosci wektora. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Kwadrat wielkosi wektora </dd></dl>
+
+</div>
+</div>
+<a id="a4c8f0fa268064f0c04d0c86c9bcf3b8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c8f0fa268064f0c04d0c86c9bcf3b8e">&#9670;&nbsp;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vec2_d.html">Vec2D</a> Vec2D::operator* </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scale</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda skalujaca wektor przez skalar. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scale</td><td>Skalar przez ktory mnozy sie wektor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Przeskalowany wektor </dd></dl>
+
+</div>
+</div>
+<a id="a214cc6f1c62be23ebd2d334bdd4b0150"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a214cc6f1c62be23ebd2d334bdd4b0150">&#9670;&nbsp;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vec2_d.html">Vec2D</a> Vec2D::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;&#160;</td>
+          <td class="paramname"><em>vec</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda dodajaca dwa wektory. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>Wektor do dodania </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Suma wektorow </dd></dl>
+
+</div>
+</div>
+<a id="a3f864cd649f86c8cddeb4bbda4537b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f864cd649f86c8cddeb4bbda4537b09">&#9670;&nbsp;</a></span>operator-() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vec2_d.html">Vec2D</a> Vec2D::operator- </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda do negacji wektora. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Zanegowany wektor </dd></dl>
+
+</div>
+</div>
+<a id="aa9f536db724ff84dca77fe67e2ad9039"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9f536db724ff84dca77fe67e2ad9039">&#9670;&nbsp;</a></span>operator-() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vec2_d.html">Vec2D</a> Vec2D::operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;&#160;</td>
+          <td class="paramname"><em>vec</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda odejmujaca dwa wektory. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>Wektor do odjecia </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Roznica miedzy wektorami </dd></dl>
+
+</div>
+</div>
+<a id="a77481b8be18f5ec34573c2bffe7e0a85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77481b8be18f5ec34573c2bffe7e0a85">&#9670;&nbsp;</a></span>operator-=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vec2_d.html">Vec2D</a> &amp; Vec2D::operator-= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;&#160;</td>
+          <td class="paramname"><em>vec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda odejmujaca wektor od aktualnego wektora. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>Wektor do odjecia </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Referencja do aktualnego wektora </dd></dl>
+
+</div>
+</div>
+<a id="ac8e3e58e042787192f412a0428adfbc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8e3e58e042787192f412a0428adfbc9">&#9670;&nbsp;</a></span>operator/()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vec2_d.html">Vec2D</a> Vec2D::operator/ </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scale</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda dzielaca wektor przez skalar. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scale</td><td>Skalar przez ktory dzieli sie wektor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Wektor podzielony </dd></dl>
+
+</div>
+</div>
+<a id="aacb0a037ea1421097bdab7306e2d33c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb0a037ea1421097bdab7306e2d33c2">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Vec2D::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;&#160;</td>
+          <td class="paramname"><em>vec2</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda sprawdzajaca rownosc dwoch wektorow. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec2</td><td>Wektor do porownania </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Prawda, jezeli wektory sa rowne, w innych przypadkach falsz </dd></dl>
+
+</div>
+</div>
+<a id="a485a06851793e9d135cfec9512ee75ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a485a06851793e9d135cfec9512ee75ff">&#9670;&nbsp;</a></span>ProjectOnto()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vec2_d.html">Vec2D</a> Vec2D::ProjectOnto </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;&#160;</td>
+          <td class="paramname"><em>vec2</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda wyznaczajaca rzut wektora. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec2</td><td>Wektor do wyznaczenia rzutu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Rzut wektora </dd></dl>
+
+</div>
+</div>
+<a id="a9f6235824b05ef3e89ea48cce1d1c2d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f6235824b05ef3e89ea48cce1d1c2d0">&#9670;&nbsp;</a></span>Reflect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vec2_d.html">Vec2D</a> Vec2D::Reflect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;&#160;</td>
+          <td class="paramname"><em>normal</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda wyznaczajaca odbicie wektora wzgledem danej normalnej. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">normal</td><td>Normalna </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Odbity wektor </dd></dl>
+
+</div>
+</div>
+<a id="af062170ce8fdcb1a195d85d4f0850d21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af062170ce8fdcb1a195d85d4f0850d21">&#9670;&nbsp;</a></span>Rotate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vec2D::Rotate </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;&#160;</td>
+          <td class="paramname"><em>aroundPoint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda obracajaca aktualny wektor wokol punktu o podany kat. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle</td><td>Kat obrotu (w radianach) </td></tr>
+    <tr><td class="paramname">aroundPoint</td><td>Punkt wokol ktorego nastepuje obrot </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Obrocony wektor </dd></dl>
+
+</div>
+</div>
+<a id="a3c0dff924e226d7673900550f34b0f5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c0dff924e226d7673900550f34b0f5a">&#9670;&nbsp;</a></span>SetX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vec2D::SetX </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda ustawiajace wspolrzedna x wektora. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Nowa wspolrzedna x </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af425b2746fe6ab145aa688c168712060"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af425b2746fe6ab145aa688c168712060">&#9670;&nbsp;</a></span>SetY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vec2D::SetY </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda ustawiajace wspolrzedna y wektora. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>Nowa wspolrzedna y </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja przyjaciół i funkcji związanych</h2>
+<a id="a95a6aa08a18169f35455317234bf7c41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95a6aa08a18169f35455317234bf7c41">&#9670;&nbsp;</a></span>operator*</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vec2_d.html">Vec2D</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scalar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;&#160;</td>
+          <td class="paramname"><em>vec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mnozenie skalara przez wektor. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scalar</td><td>skalar do mnozenia </td></tr>
+    <tr><td class="paramname">vec</td><td>Wektor do mnozenia </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Wynik mnozenia skalara i wektora </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="ab42724bbda6b56accba4c95017d3a743"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab42724bbda6b56accba4c95017d3a743">&#9670;&nbsp;</a></span>Zero</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vec2D::Zero</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Staly wektor o wsporzednych (0,0) </p>
+<p>Staly wektor o wsporzednych (0, 0) </p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>src/Utils/<a class="el" href="_vec2_d_8h_source.html">Vec2D.h</a></li>
+<li>src/Utils/Vec2D.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

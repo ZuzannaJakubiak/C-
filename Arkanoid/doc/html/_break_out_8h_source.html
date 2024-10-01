@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Arkanoid: Plik źródłowy src/Games/BreakOut/BreakOut.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Arkanoid
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c1d028e99427bd8df0a9e524a3361934.html">Games</a></li><li class="navelem"><a class="el" href="dir_9b41a1cf67ffd0861142a1f7bf92e8c7.html">BreakOut</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BreakOut.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GAMES_BREAKOUT_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GAMES_BREAKOUT_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;Paddle.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;Ball.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;LevelBoundary.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;BreakoutGameLevel.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_game_controller.html">GameController</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="code" href="class_screen.html">Screen</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">enum</span> BreakoutGameStates</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;IN_PLAY = 0, </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;IN_SERVE, </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;IN_GAME_OVER </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_break_out.html">   55</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_break_out.html">BreakOut</a></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_break_out.html#abdf8d6f57d38183108863830057efd95">Init</a>(<a class="code" href="class_game_controller.html">GameController</a>&amp; controller);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_break_out.html#ac4fc0588411714b8c6c5355d15ba6f4d">Update</a>(uint32_t dt);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_break_out.html#afd5ee726b6b2803b370ee01899d30f38">Draw</a>(<a class="code" href="class_screen.html">Screen</a>&amp; screen);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> std::string &amp; <a class="code" href="class_break_out.html#a81d73dd0569cca8cdb92375aa07a0a62">GetName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> NUM_LIVES = 3; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> ResetGame(<span class="keywordtype">size_t</span> toLevel =0);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="class_breakout_game_level.html">BreakoutGameLevel</a>&amp; GetCurrentLevel() {<span class="keywordflow">return</span> mLevels[mCurrentLevel];}</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> SetToServeState();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">bool</span> IsBallPassedCutoffY() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">void</span> ReduceLifeByOne();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">bool</span> IsGameOver()<span class="keyword"> const </span>{<span class="keywordflow">return</span> mLives &lt; 0;}</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> INITIAL_BALL_SPEED = 100; <span class="comment">//.&lt; Predkosc pilki.</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="class_paddle.html">Paddle</a> mPaddle; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <a class="code" href="class_ball.html">Ball</a> mBall; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="code" href="class_level_boundary.html">LevelBoundary</a> mLevelBoundary; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    std::vector&lt;BreakoutGameLevel&gt; mLevels; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">size_t</span> mCurrentLevel = 0; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    BreakoutGameStates mGameState; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">int</span> mLives; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">float</span> mYCutoff; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;};</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GAMES_BREAKOUT_H_ */</span><span class="preprocessor"></span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_break_out_html_afd5ee726b6b2803b370ee01899d30f38"><div class="ttname"><a href="class_break_out.html#afd5ee726b6b2803b370ee01899d30f38">BreakOut::Draw</a></div><div class="ttdeci">virtual void Draw(Screen &amp;screen)</div><div class="ttdoc">Rysuje gre na ekranie.</div><div class="ttdef"><b>Definition:</b> BreakOut.cpp:149</div></div>
+<div class="ttc" id="aclass_break_out_html_abdf8d6f57d38183108863830057efd95"><div class="ttname"><a href="class_break_out.html#abdf8d6f57d38183108863830057efd95">BreakOut::Init</a></div><div class="ttdeci">virtual void Init(GameController &amp;controller)</div><div class="ttdoc">Inicjuje gre z danym GameController.</div><div class="ttdef"><b>Definition:</b> BreakOut.cpp:17</div></div>
+<div class="ttc" id="aclass_game_controller_html"><div class="ttname"><a href="class_game_controller.html">GameController</a></div><div class="ttdoc">Klasa GameController obsluguje dane wejsciowe uzytkownika.</div><div class="ttdef"><b>Definition:</b> GameController.h:41</div></div>
+<div class="ttc" id="aclass_ball_html"><div class="ttname"><a href="class_ball.html">Ball</a></div><div class="ttdoc">Klasa Ball reprezentujaca pilke w grze.</div><div class="ttdef"><b>Definition:</b> Ball.h:23</div></div>
+<div class="ttc" id="aclass_level_boundary_html"><div class="ttname"><a href="class_level_boundary.html">LevelBoundary</a></div><div class="ttdoc">Klasa LevelBoundary reprezentuje granice w grze. Zawiera AARectangle, reprezentujacy granice....</div><div class="ttdef"><b>Definition:</b> LevelBoundary.h:21</div></div>
+<div class="ttc" id="aclass_screen_html"><div class="ttname"><a href="class_screen.html">Screen</a></div><div class="ttdoc">Klasa Screen zapewnia interfejs do rysowania ksztaltow i obrazow 2D na ekranie przy uzyciu biblioteki...</div><div class="ttdef"><b>Definition:</b> Screen.h:32</div></div>
+<div class="ttc" id="aclass_break_out_html_ac4fc0588411714b8c6c5355d15ba6f4d"><div class="ttname"><a href="class_break_out.html#ac4fc0588411714b8c6c5355d15ba6f4d">BreakOut::Update</a></div><div class="ttdeci">virtual void Update(uint32_t dt)</div><div class="ttdoc">Odswieza z gre co dany czas dt.</div><div class="ttdef"><b>Definition:</b> BreakOut.cpp:99</div></div>
+<div class="ttc" id="aclass_break_out_html"><div class="ttname"><a href="class_break_out.html">BreakOut</a></div><div class="ttdoc">Klasa Breakout jest odpowiedzialna za inicjalizacje, odswiezanie i rysowanie gry. Obsluguje tez stan ...</div><div class="ttdef"><b>Definition:</b> BreakOut.h:56</div></div>
+<div class="ttc" id="aclass_paddle_html"><div class="ttname"><a href="class_paddle.html">Paddle</a></div><div class="ttdoc">Klasa Paddle reprezentuje belke w grze Breakout.</div><div class="ttdef"><b>Definition:</b> Paddle.h:29</div></div>
+<div class="ttc" id="aclass_breakout_game_level_html"><div class="ttname"><a href="class_breakout_game_level.html">BreakoutGameLevel</a></div><div class="ttdoc">Klasa BreakoutGameLevel reprezentuje level w grze.</div><div class="ttdef"><b>Definition:</b> BreakoutGameLevel.h:27</div></div>
+<div class="ttc" id="aclass_break_out_html_a81d73dd0569cca8cdb92375aa07a0a62"><div class="ttname"><a href="class_break_out.html#a81d73dd0569cca8cdb92375aa07a0a62">BreakOut::GetName</a></div><div class="ttdeci">virtual const std::string &amp; GetName() const</div><div class="ttdoc">Getter nazwy gry.</div><div class="ttdef"><b>Definition:</b> BreakOut.cpp:167</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

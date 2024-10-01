@@ -1,0 +1,465 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Arkanoid: Dokumentacja klasy Line2D</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Arkanoid
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="class_line2_d-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy Line2D</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa reprezntujaca linie 2D zdefiniowana przez dwa punkty, zapewnia metody do ustawiania oraz uzyskiwania tych punktow, sprawdzania rownosci linii, wyznaczania najkrotszego dystansu od punktu oraz wyznaczania najblizszego punktu na linii do danego punktuan.  
+ <a href="class_line2_d.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_line2_d_8h_source.html">Line2D.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:ad5c2ddbfd029ac9589741df466e7599a"><td class="memItemLeft" align="right" valign="top"><a id="ad5c2ddbfd029ac9589741df466e7599a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line2_d.html#ad5c2ddbfd029ac9589741df466e7599a">Line2D</a> ()</td></tr>
+<tr class="memdesc:ad5c2ddbfd029ac9589741df466e7599a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor domyslny. <br /></td></tr>
+<tr class="separator:ad5c2ddbfd029ac9589741df466e7599a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ff6d3e8b58e4a4439283e57312f2fb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line2_d.html#a8ff6d3e8b58e4a4439283e57312f2fb1">Line2D</a> (float x0, float y0, float x1, float y1)</td></tr>
+<tr class="memdesc:a8ff6d3e8b58e4a4439283e57312f2fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor z podanymi wspolrzednymi dla obu punktow.  <a href="class_line2_d.html#a8ff6d3e8b58e4a4439283e57312f2fb1">Więcej...</a><br /></td></tr>
+<tr class="separator:a8ff6d3e8b58e4a4439283e57312f2fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd69c1a1921f09c905efed2fc7756b40"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line2_d.html#afd69c1a1921f09c905efed2fc7756b40">Line2D</a> (const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;p0, const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;p1)</td></tr>
+<tr class="memdesc:afd69c1a1921f09c905efed2fc7756b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstrukotor z podanymi punktami <a class="el" href="class_vec2_d.html" title="Klasa 2D vector, z podstawowymi operacjami matematycznym, takimi jak dodawanie, odejmowanie,...">Vec2D</a>.  <a href="class_line2_d.html#afd69c1a1921f09c905efed2fc7756b40">Więcej...</a><br /></td></tr>
+<tr class="separator:afd69c1a1921f09c905efed2fc7756b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafc214d9eb0aeb04f661061db243bd68"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line2_d.html#aafc214d9eb0aeb04f661061db243bd68">GetP0</a> () const</td></tr>
+<tr class="memdesc:aafc214d9eb0aeb04f661061db243bd68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda sprawdzajaca pierwszy punky linii.  <a href="class_line2_d.html#aafc214d9eb0aeb04f661061db243bd68">Więcej...</a><br /></td></tr>
+<tr class="separator:aafc214d9eb0aeb04f661061db243bd68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77f3d0fdad9d05b22dc7fc7f9104b73"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line2_d.html#af77f3d0fdad9d05b22dc7fc7f9104b73">GetP1</a> () const</td></tr>
+<tr class="memdesc:af77f3d0fdad9d05b22dc7fc7f9104b73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda sprawdzajaca drugi punky linii.  <a href="class_line2_d.html#af77f3d0fdad9d05b22dc7fc7f9104b73">Więcej...</a><br /></td></tr>
+<tr class="separator:af77f3d0fdad9d05b22dc7fc7f9104b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cd44baf3c46f32a935c823f33185996"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line2_d.html#a3cd44baf3c46f32a935c823f33185996">SetP0</a> (const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;p0)</td></tr>
+<tr class="memdesc:a3cd44baf3c46f32a935c823f33185996"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda ustawiajaca pierwszy punky linii.  <a href="class_line2_d.html#a3cd44baf3c46f32a935c823f33185996">Więcej...</a><br /></td></tr>
+<tr class="separator:a3cd44baf3c46f32a935c823f33185996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab93d06303ac2a3cf17bd994d25f00126"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line2_d.html#ab93d06303ac2a3cf17bd994d25f00126">SetP1</a> (const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;p1)</td></tr>
+<tr class="memdesc:ab93d06303ac2a3cf17bd994d25f00126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda ustawiajaca drugi punky linii.  <a href="class_line2_d.html#ab93d06303ac2a3cf17bd994d25f00126">Więcej...</a><br /></td></tr>
+<tr class="separator:ab93d06303ac2a3cf17bd994d25f00126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae89f19f72fb9e7a1fec7d46ffe63445d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line2_d.html#ae89f19f72fb9e7a1fec7d46ffe63445d">operator==</a> (const <a class="el" href="class_line2_d.html">Line2D</a> &amp;line) const</td></tr>
+<tr class="memdesc:ae89f19f72fb9e7a1fec7d46ffe63445d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda sprawdzajaca rownosc linii z inna.  <a href="class_line2_d.html#ae89f19f72fb9e7a1fec7d46ffe63445d">Więcej...</a><br /></td></tr>
+<tr class="separator:ae89f19f72fb9e7a1fec7d46ffe63445d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c3a50e3e4388cea5e4f13ea4953c95"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line2_d.html#a06c3a50e3e4388cea5e4f13ea4953c95">MinDistanceFrom</a> (const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;p, bool limitToSegment=false) const</td></tr>
+<tr class="memdesc:a06c3a50e3e4388cea5e4f13ea4953c95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wyznaczajaca minimalna odleglosc od punktu do linii.  <a href="class_line2_d.html#a06c3a50e3e4388cea5e4f13ea4953c95">Więcej...</a><br /></td></tr>
+<tr class="separator:a06c3a50e3e4388cea5e4f13ea4953c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d85166f94784886a9d30a9cfd85fe53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vec2_d.html">Vec2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line2_d.html#a9d85166f94784886a9d30a9cfd85fe53">ClosestPoint</a> (const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;p, bool limitToSegment=false) const</td></tr>
+<tr class="memdesc:a9d85166f94784886a9d30a9cfd85fe53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wyznaczjaca najblizszy punkt na linii do danego punktu.  <a href="class_line2_d.html#a9d85166f94784886a9d30a9cfd85fe53">Więcej...</a><br /></td></tr>
+<tr class="separator:a9d85166f94784886a9d30a9cfd85fe53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e292ac500bf63f8d25f7d92e7ea87ea"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line2_d.html#a6e292ac500bf63f8d25f7d92e7ea87ea">Length</a> () const</td></tr>
+<tr class="memdesc:a6e292ac500bf63f8d25f7d92e7ea87ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wyznaczajaca dlugosc linii.  <a href="class_line2_d.html#a6e292ac500bf63f8d25f7d92e7ea87ea">Więcej...</a><br /></td></tr>
+<tr class="separator:a6e292ac500bf63f8d25f7d92e7ea87ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa reprezntujaca linie 2D zdefiniowana przez dwa punkty, zapewnia metody do ustawiania oraz uzyskiwania tych punktow, sprawdzania rownosci linii, wyznaczania najkrotszego dystansu od punktu oraz wyznaczania najblizszego punktu na linii do danego punktuan. </p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a8ff6d3e8b58e4a4439283e57312f2fb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ff6d3e8b58e4a4439283e57312f2fb1">&#9670;&nbsp;</a></span>Line2D() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Line2D::Line2D </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor z podanymi wspolrzednymi dla obu punktow. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x0</td><td>Wspolrzedna x pierwszego punktu </td></tr>
+    <tr><td class="paramname">y0</td><td>Wspolrzedna y pierwszego punktu </td></tr>
+    <tr><td class="paramname">x1</td><td>Wspolrzedna x drugiego punktu </td></tr>
+    <tr><td class="paramname">y1</td><td>Wspolrzedna y drugiego punktu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afd69c1a1921f09c905efed2fc7756b40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd69c1a1921f09c905efed2fc7756b40">&#9670;&nbsp;</a></span>Line2D() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Line2D::Line2D </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstrukotor z podanymi punktami <a class="el" href="class_vec2_d.html" title="Klasa 2D vector, z podstawowymi operacjami matematycznym, takimi jak dodawanie, odejmowanie,...">Vec2D</a>. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p0</td><td>Pierwszy punkt </td></tr>
+    <tr><td class="paramname">p1</td><td>Drugi punkt </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a9d85166f94784886a9d30a9cfd85fe53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d85166f94784886a9d30a9cfd85fe53">&#9670;&nbsp;</a></span>ClosestPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vec2_d.html">Vec2D</a> Line2D::ClosestPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>limitToSegment</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda wyznaczjaca najblizszy punkt na linii do danego punktu. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>punkt </td></tr>
+    <tr><td class="paramname">limitToSegment</td><td>Okresla, czy ograniczyc odleglosc do segmentu, czy nie </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Punkt na linii najblizszy do danego punktu </dd></dl>
+
+</div>
+</div>
+<a id="aafc214d9eb0aeb04f661061db243bd68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafc214d9eb0aeb04f661061db243bd68">&#9670;&nbsp;</a></span>GetP0()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_vec2_d.html">Vec2D</a>&amp; Line2D::GetP0 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda sprawdzajaca pierwszy punky linii. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Pierwszy punkt </dd></dl>
+
+</div>
+</div>
+<a id="af77f3d0fdad9d05b22dc7fc7f9104b73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af77f3d0fdad9d05b22dc7fc7f9104b73">&#9670;&nbsp;</a></span>GetP1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_vec2_d.html">Vec2D</a>&amp; Line2D::GetP1 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda sprawdzajaca drugi punky linii. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Drugi punkt </dd></dl>
+
+</div>
+</div>
+<a id="a6e292ac500bf63f8d25f7d92e7ea87ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e292ac500bf63f8d25f7d92e7ea87ea">&#9670;&nbsp;</a></span>Length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Line2D::Length </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda wyznaczajaca dlugosc linii. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Dlugosc linii </dd></dl>
+
+</div>
+</div>
+<a id="a06c3a50e3e4388cea5e4f13ea4953c95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06c3a50e3e4388cea5e4f13ea4953c95">&#9670;&nbsp;</a></span>MinDistanceFrom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Line2D::MinDistanceFrom </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>limitToSegment</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda wyznaczajaca minimalna odleglosc od punktu do linii. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Punkt </td></tr>
+    <tr><td class="paramname">limitToSegment</td><td>Okresla, czy ograniczyc odleglosc do segmentu, czy nie </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Minimalna odleglosc od punktu do linii </dd></dl>
+
+</div>
+</div>
+<a id="ae89f19f72fb9e7a1fec7d46ffe63445d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae89f19f72fb9e7a1fec7d46ffe63445d">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Line2D::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_line2_d.html">Line2D</a> &amp;&#160;</td>
+          <td class="paramname"><em>line</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda sprawdzajaca rownosc linii z inna. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>Linia do porownania </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Prawda jezeli rowne, w innym przypadku falsz </dd></dl>
+
+</div>
+</div>
+<a id="a3cd44baf3c46f32a935c823f33185996"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cd44baf3c46f32a935c823f33185996">&#9670;&nbsp;</a></span>SetP0()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Line2D::SetP0 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p0</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda ustawiajaca pierwszy punky linii. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p0</td><td>Nowy punkt poczatkowy </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab93d06303ac2a3cf17bd994d25f00126"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab93d06303ac2a3cf17bd994d25f00126">&#9670;&nbsp;</a></span>SetP1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Line2D::SetP1 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vec2_d.html">Vec2D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda ustawiajaca drugi punky linii. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p1</td><td>Nowy punkt koncowy </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>src/Shapes/<a class="el" href="_line2_d_8h_source.html">Line2D.h</a></li>
+<li>src/Shapes/Line2D.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

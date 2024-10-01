@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Arkanoid: Plik źródłowy src/Games/BreakOut/Excluder.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Arkanoid
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c1d028e99427bd8df0a9e524a3361934.html">Games</a></li><li class="navelem"><a class="el" href="dir_9b41a1cf67ffd0861142a1f7bf92e8c7.html">BreakOut</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Excluder.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GAMES_EXCLUDER_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GAMES_EXCLUDER_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;AARectangle.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;Vec2D.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;Line2D.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">enum</span> EdgeType</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    BOTTOM_EDGE = 0,</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    TOP_EDGE,</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    LEFT_EDGE,</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    RIGHT_EDGE,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    NUM_EDGES</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="class_vec2_d.html">Vec2D</a> UP_DIR = {0, -1};</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="class_vec2_d.html">Vec2D</a> DOWN_DIR = {0, 1};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="class_vec2_d.html">Vec2D</a> LEFT_DIR = {-1, 0};</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="class_vec2_d.html">Vec2D</a> RIGHT_DIR = {1, 0};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_boundary_edge.html">   27</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_boundary_edge.html">BoundaryEdge</a></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="struct_boundary_edge.html#a517ad228f0ee0d44afde0999dde3b9d2">   29</a></span>&#160;    <a class="code" href="class_vec2_d.html">Vec2D</a> <a class="code" href="struct_boundary_edge.html#a517ad228f0ee0d44afde0999dde3b9d2">normal</a>; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_line2_d.html">Line2D</a> edge; <span class="comment">//**&lt;Krawedz */</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_excluder.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_excluder.html">Excluder</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_excluder.html#a4391ccc8b9a7a2979d0a79081cf41706">   44</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_excluder.html#a4391ccc8b9a7a2979d0a79081cf41706">~Excluder</a>() {}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_excluder.html#a196c2c8635532aab0ca74c9390ab5a85">Init</a>(<span class="keyword">const</span> <a class="code" href="class_a_a_rectangle.html">AARectangle</a>&amp; rect, <span class="keywordtype">bool</span> reverseNormals = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_excluder.html#a6f4b4a62cf1ba1594b78c6b3c4bcc47c">HasCollided</a>(<span class="keyword">const</span> <a class="code" href="class_a_a_rectangle.html">AARectangle</a>&amp; rect, <a class="code" href="struct_boundary_edge.html">BoundaryEdge</a>&amp; edge) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="class_vec2_d.html">Vec2D</a> <a class="code" href="class_excluder.html#a3bab45c921b93cda43d56273cee6ba04">GetCollisionOffset</a>(<span class="keyword">const</span> <a class="code" href="class_a_a_rectangle.html">AARectangle</a>&amp; rect) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_excluder.html#a03644f94e9429db41858c1ad7dd6b58c">   72</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="class_a_a_rectangle.html">AARectangle</a>&amp; <a class="code" href="class_excluder.html#a03644f94e9429db41858c1ad7dd6b58c">GetAARectangle</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> mAARect;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_excluder.html#a95475092580a6cdde6250cf214a3951c">MoveBy</a>(<span class="keyword">const</span> <a class="code" href="class_vec2_d.html">Vec2D</a>&amp; delta);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_excluder.html#a8c00dd9911c9f3ff7bbb22e4934adc12">MoveTo</a>(<span class="keyword">const</span> <a class="code" href="class_vec2_d.html">Vec2D</a>&amp; point);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">const</span> <a class="code" href="struct_boundary_edge.html">BoundaryEdge</a>&amp; <a class="code" href="class_excluder.html#a954be876419760be8768562d2198e0e8">GetEdge</a>(EdgeType edge) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> SetupEdges();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="class_a_a_rectangle.html">AARectangle</a> mAARect; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="struct_boundary_edge.html">BoundaryEdge</a> mEdges[NUM_EDGES]; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">bool</span> mReverseNormals; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GAMES_EXCLUDER_H_ */</span><span class="preprocessor"></span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_excluder_html_a95475092580a6cdde6250cf214a3951c"><div class="ttname"><a href="class_excluder.html#a95475092580a6cdde6250cf214a3951c">Excluder::MoveBy</a></div><div class="ttdeci">void MoveBy(const Vec2D &amp;delta)</div><div class="ttdoc">Przesuwa Excluder o dane przesuniecie.</div><div class="ttdef"><b>Definition:</b> Excluder.cpp:95</div></div>
+<div class="ttc" id="aclass_excluder_html_a6f4b4a62cf1ba1594b78c6b3c4bcc47c"><div class="ttname"><a href="class_excluder.html#a6f4b4a62cf1ba1594b78c6b3c4bcc47c">Excluder::HasCollided</a></div><div class="ttdeci">bool HasCollided(const AARectangle &amp;rect, BoundaryEdge &amp;edge) const</div><div class="ttdoc">Sprawdza, czy dany prostokat zderzyl się z Excluderem.</div><div class="ttdef"><b>Definition:</b> Excluder.cpp:19</div></div>
+<div class="ttc" id="aclass_excluder_html_a03644f94e9429db41858c1ad7dd6b58c"><div class="ttname"><a href="class_excluder.html#a03644f94e9429db41858c1ad7dd6b58c">Excluder::GetAARectangle</a></div><div class="ttdeci">const AARectangle &amp; GetAARectangle() const</div><div class="ttdoc">Wyznacza prostokat uzywany przez Excluder.</div><div class="ttdef"><b>Definition:</b> Excluder.h:72</div></div>
+<div class="ttc" id="astruct_boundary_edge_html"><div class="ttname"><a href="struct_boundary_edge.html">BoundaryEdge</a></div><div class="ttdoc">Struktura do przechowywania informacji o krawedzi.</div><div class="ttdef"><b>Definition:</b> Excluder.h:28</div></div>
+<div class="ttc" id="aclass_line2_d_html"><div class="ttname"><a href="class_line2_d.html">Line2D</a></div><div class="ttdoc">Klasa reprezntujaca linie 2D zdefiniowana przez dwa punkty, zapewnia metody do ustawiania oraz uzyski...</div><div class="ttdef"><b>Definition:</b> Line2D.h:16</div></div>
+<div class="ttc" id="aclass_excluder_html"><div class="ttname"><a href="class_excluder.html">Excluder</a></div><div class="ttdoc">Klasa Excluder reprezentuje obiekt, ktorego mozna uzyc do psrawdzania kolizji z innymi obiektami.</div><div class="ttdef"><b>Definition:</b> Excluder.h:39</div></div>
+<div class="ttc" id="aclass_excluder_html_a196c2c8635532aab0ca74c9390ab5a85"><div class="ttname"><a href="class_excluder.html#a196c2c8635532aab0ca74c9390ab5a85">Excluder::Init</a></div><div class="ttdeci">void Init(const AARectangle &amp;rect, bool reverseNormals=false)</div><div class="ttdoc">Inicjuje Excluder z podanym AARectangle.</div><div class="ttdef"><b>Definition:</b> Excluder.cpp:12</div></div>
+<div class="ttc" id="aclass_excluder_html_a8c00dd9911c9f3ff7bbb22e4934adc12"><div class="ttname"><a href="class_excluder.html#a8c00dd9911c9f3ff7bbb22e4934adc12">Excluder::MoveTo</a></div><div class="ttdeci">void MoveTo(const Vec2D &amp;point)</div><div class="ttdoc">Przesuwa Excluder do danego punktu.</div><div class="ttdef"><b>Definition:</b> Excluder.cpp:101</div></div>
+<div class="ttc" id="aclass_excluder_html_a4391ccc8b9a7a2979d0a79081cf41706"><div class="ttname"><a href="class_excluder.html#a4391ccc8b9a7a2979d0a79081cf41706">Excluder::~Excluder</a></div><div class="ttdeci">virtual ~Excluder()</div><div class="ttdoc">Wirtualny destruktor.</div><div class="ttdef"><b>Definition:</b> Excluder.h:44</div></div>
+<div class="ttc" id="aclass_vec2_d_html"><div class="ttname"><a href="class_vec2_d.html">Vec2D</a></div><div class="ttdoc">Klasa 2D vector, z podstawowymi operacjami matematycznym, takimi jak dodawanie, odejmowanie,...</div><div class="ttdef"><b>Definition:</b> Vec2D.h:25</div></div>
+<div class="ttc" id="aclass_excluder_html_a3bab45c921b93cda43d56273cee6ba04"><div class="ttname"><a href="class_excluder.html#a3bab45c921b93cda43d56273cee6ba04">Excluder::GetCollisionOffset</a></div><div class="ttdeci">Vec2D GetCollisionOffset(const AARectangle &amp;rect) const</div><div class="ttdoc">Wyznacza przesuniecie, aby uniknac uderzenia.</div><div class="ttdef"><b>Definition:</b> Excluder.cpp:65</div></div>
+<div class="ttc" id="astruct_boundary_edge_html_a517ad228f0ee0d44afde0999dde3b9d2"><div class="ttname"><a href="struct_boundary_edge.html#a517ad228f0ee0d44afde0999dde3b9d2">BoundaryEdge::normal</a></div><div class="ttdeci">Vec2D normal</div><div class="ttdef"><b>Definition:</b> Excluder.h:29</div></div>
+<div class="ttc" id="aclass_a_a_rectangle_html"><div class="ttname"><a href="class_a_a_rectangle.html">AARectangle</a></div><div class="ttdoc">Klasa AARectangle reprezentuje wyrownany do osi ksztalt prostokata, dziedziczy po klasie Shapes.</div><div class="ttdef"><b>Definition:</b> AARectangle.h:11</div></div>
+<div class="ttc" id="aclass_excluder_html_a954be876419760be8768562d2198e0e8"><div class="ttname"><a href="class_excluder.html#a954be876419760be8768562d2198e0e8">Excluder::GetEdge</a></div><div class="ttdeci">const BoundaryEdge &amp; GetEdge(EdgeType edge) const</div><div class="ttdoc">Pobiera okreslona krawedz Excludera..</div><div class="ttdef"><b>Definition:</b> Excluder.cpp:107</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

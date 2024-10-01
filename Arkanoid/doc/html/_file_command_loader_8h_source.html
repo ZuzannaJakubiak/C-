@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Arkanoid: Plik źródłowy src/Utils/FileCommandLoader.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Arkanoid
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a7363e98f9e0bdd87618633653859815.html">Utils</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">FileCommandLoader.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * FileCommandLoader.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: 4 sty 2023</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: Zuzanna Jakubiak</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef UTILS_FILECOMMANDLOADER_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define UTILS_FILECOMMANDLOADER_H_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="class_color.html">Color</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">enum</span> CommandType</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    COMMAND_ONE_LINE = 0, </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    COMMAND_MULTI_LINE </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="struct_parse_func_params.html">   30</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_parse_func_params.html">ParseFuncParams</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="struct_parse_func_params.html#a9a29aa887708bd11884f9f9f19583788">   32</a></span>&#160;    std::string <a class="code" href="struct_parse_func_params.html#a9a29aa887708bd11884f9f9f19583788">line</a>; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_parse_func_params.html#ae280e72cb3f281434feb33feac28db5a">   33</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="struct_parse_func_params.html#ae280e72cb3f281434feb33feac28db5a">dilimitPos</a>; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct_parse_func_params.html#a4512fcde51a7c8884f32dc69d5ec3621">   34</a></span>&#160;    uint32_t <a class="code" href="struct_parse_func_params.html#a4512fcde51a7c8884f32dc69d5ec3621">lineNum</a>; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">using</span> ParseFunc =  std::function&lt;void(<span class="keyword">const</span> <a class="code" href="struct_parse_func_params.html">ParseFuncParams</a>&amp; params)&gt;;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="struct_command.html">   45</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_command.html">Command</a></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="struct_command.html#a263243414bfa4ce35815352450647149">   47</a></span>&#160;    CommandType <a class="code" href="struct_command.html#a263243414bfa4ce35815352450647149">commandType</a> = COMMAND_ONE_LINE; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="struct_command.html#a7a6e618851df0485fd4cc264cb222e99">   48</a></span>&#160;    std::string <a class="code" href="struct_command.html#a7a6e618851df0485fd4cc264cb222e99">command</a> = <span class="stringliteral">&quot;&quot;</span>; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="struct_command.html#a5f499c631f7e5ae61661cb1db5c8b7b6">   49</a></span>&#160;    ParseFunc <a class="code" href="struct_command.html#a5f499c631f7e5ae61661cb1db5c8b7b6">parseFunc</a> = <span class="keyword">nullptr</span>; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_file_command_loader.html">   58</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_file_command_loader.html">FileCommandLoader</a></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_file_command_loader.html#a0466d0c534fef17d47916509d4577a80">AddCommand</a>(<span class="keyword">const</span> <a class="code" href="struct_command.html">Command</a>&amp; command);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_file_command_loader.html#a309e2ea4f28072434cdf44d53b6322b9">LoadFile</a>(<span class="keyword">const</span> std::string&amp; filePath);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_color.html">Color</a> <a class="code" href="class_file_command_loader.html#acb403711a0f322b127a7a1a608598eef">ReadColor</a>(<span class="keyword">const</span> <a class="code" href="struct_parse_func_params.html">ParseFuncParams</a>&amp; params);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_file_command_loader.html#ad72202c5cb45e3b1ef63cad7200d67c0">ReadInt</a>( <span class="keyword">const</span> <a class="code" href="struct_parse_func_params.html">ParseFuncParams</a>&amp; params);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">char</span> <a class="code" href="class_file_command_loader.html#aaa22b05ff036a179e480e2828f25b0c2">ReadChar</a>(<span class="keyword">const</span> <a class="code" href="struct_parse_func_params.html">ParseFuncParams</a>&amp; params);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    std::vector&lt;Command&gt; mCommands;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* UTILS_FILECOMMANDLOADER_H_ */</span><span class="preprocessor"></span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_color_html"><div class="ttname"><a href="class_color.html">Color</a></div><div class="ttdoc">Klasa reprezentujaca kolor w formacie RGBA.</div><div class="ttdef"><b>Definition:</b> Color.h:13</div></div>
+<div class="ttc" id="aclass_file_command_loader_html"><div class="ttname"><a href="class_file_command_loader.html">FileCommandLoader</a></div><div class="ttdoc">Klasa do ładowania komend z pliku, gdzie kazda komenda jest reprezentowana przez ciag znakow i funckj...</div><div class="ttdef"><b>Definition:</b> FileCommandLoader.h:59</div></div>
+<div class="ttc" id="aclass_file_command_loader_html_a309e2ea4f28072434cdf44d53b6322b9"><div class="ttname"><a href="class_file_command_loader.html#a309e2ea4f28072434cdf44d53b6322b9">FileCommandLoader::LoadFile</a></div><div class="ttdeci">bool LoadFile(const std::string &amp;filePath)</div><div class="ttdoc">Metoda ladujaca plik.</div><div class="ttdef"><b>Definition:</b> FileCommandLoader.cpp:12</div></div>
+<div class="ttc" id="aclass_file_command_loader_html_acb403711a0f322b127a7a1a608598eef"><div class="ttname"><a href="class_file_command_loader.html#acb403711a0f322b127a7a1a608598eef">FileCommandLoader::ReadColor</a></div><div class="ttdeci">static Color ReadColor(const ParseFuncParams &amp;params)</div><div class="ttdoc">Metoda do czytania koloru.</div><div class="ttdef"><b>Definition:</b> FileCommandLoader.cpp:91</div></div>
+<div class="ttc" id="astruct_command_html_a7a6e618851df0485fd4cc264cb222e99"><div class="ttname"><a href="struct_command.html#a7a6e618851df0485fd4cc264cb222e99">Command::command</a></div><div class="ttdeci">std::string command</div><div class="ttdef"><b>Definition:</b> FileCommandLoader.h:48</div></div>
+<div class="ttc" id="astruct_command_html_a263243414bfa4ce35815352450647149"><div class="ttname"><a href="struct_command.html#a263243414bfa4ce35815352450647149">Command::commandType</a></div><div class="ttdeci">CommandType commandType</div><div class="ttdef"><b>Definition:</b> FileCommandLoader.h:47</div></div>
+<div class="ttc" id="astruct_parse_func_params_html"><div class="ttname"><a href="struct_parse_func_params.html">ParseFuncParams</a></div><div class="ttdoc">Struktura do przekazywania parametrow do analizy.</div><div class="ttdef"><b>Definition:</b> FileCommandLoader.h:31</div></div>
+<div class="ttc" id="aclass_file_command_loader_html_aaa22b05ff036a179e480e2828f25b0c2"><div class="ttname"><a href="class_file_command_loader.html#aaa22b05ff036a179e480e2828f25b0c2">FileCommandLoader::ReadChar</a></div><div class="ttdeci">static char ReadChar(const ParseFuncParams &amp;params)</div><div class="ttdoc">Metoda do czytania znakow.</div><div class="ttdef"><b>Definition:</b> FileCommandLoader.cpp:114</div></div>
+<div class="ttc" id="astruct_command_html"><div class="ttname"><a href="struct_command.html">Command</a></div><div class="ttdoc">Struktura do przechowywania informacji o komendzie.</div><div class="ttdef"><b>Definition:</b> FileCommandLoader.h:46</div></div>
+<div class="ttc" id="astruct_parse_func_params_html_a4512fcde51a7c8884f32dc69d5ec3621"><div class="ttname"><a href="struct_parse_func_params.html#a4512fcde51a7c8884f32dc69d5ec3621">ParseFuncParams::lineNum</a></div><div class="ttdeci">uint32_t lineNum</div><div class="ttdef"><b>Definition:</b> FileCommandLoader.h:34</div></div>
+<div class="ttc" id="aclass_file_command_loader_html_ad72202c5cb45e3b1ef63cad7200d67c0"><div class="ttname"><a href="class_file_command_loader.html#ad72202c5cb45e3b1ef63cad7200d67c0">FileCommandLoader::ReadInt</a></div><div class="ttdeci">static int ReadInt(const ParseFuncParams &amp;params)</div><div class="ttdoc">Metoda do czytania int.</div><div class="ttdef"><b>Definition:</b> FileCommandLoader.cpp:108</div></div>
+<div class="ttc" id="astruct_command_html_a5f499c631f7e5ae61661cb1db5c8b7b6"><div class="ttname"><a href="struct_command.html#a5f499c631f7e5ae61661cb1db5c8b7b6">Command::parseFunc</a></div><div class="ttdeci">ParseFunc parseFunc</div><div class="ttdef"><b>Definition:</b> FileCommandLoader.h:49</div></div>
+<div class="ttc" id="astruct_parse_func_params_html_a9a29aa887708bd11884f9f9f19583788"><div class="ttname"><a href="struct_parse_func_params.html#a9a29aa887708bd11884f9f9f19583788">ParseFuncParams::line</a></div><div class="ttdeci">std::string line</div><div class="ttdef"><b>Definition:</b> FileCommandLoader.h:32</div></div>
+<div class="ttc" id="astruct_parse_func_params_html_ae280e72cb3f281434feb33feac28db5a"><div class="ttname"><a href="struct_parse_func_params.html#ae280e72cb3f281434feb33feac28db5a">ParseFuncParams::dilimitPos</a></div><div class="ttdeci">size_t dilimitPos</div><div class="ttdef"><b>Definition:</b> FileCommandLoader.h:33</div></div>
+<div class="ttc" id="aclass_file_command_loader_html_a0466d0c534fef17d47916509d4577a80"><div class="ttname"><a href="class_file_command_loader.html#a0466d0c534fef17d47916509d4577a80">FileCommandLoader::AddCommand</a></div><div class="ttdeci">void AddCommand(const Command &amp;command)</div><div class="ttdoc">Metoda dodajaca komende.</div><div class="ttdef"><b>Definition:</b> FileCommandLoader.cpp:7</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

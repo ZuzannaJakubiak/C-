@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Arkanoid: Plik źródłowy src/Graphics/Color.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Arkanoid
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_3419e189e460663ec2c964233bf8dcd6.html">Graphics</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Color.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GRAPHICS_COLOR_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GRAPHICS_COLOR_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">struct </span>SDL_PixelFormat;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_color.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_color.html">Color</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;uint32_t mColor; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_color.html#a8887b697d079877de4861d20f0b9f548">   20</a></span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> SDL_PixelFormat* <a class="code" href="class_color.html#a8887b697d079877de4861d20f0b9f548">mFormat</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_color.html#abf0b6ffe5da725a7b5857d7fa873fd7d">InitColorFormat</a>(<span class="keyword">const</span> SDL_PixelFormat* format);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_color.html#aeda97541296441f1e45666030c7431aa">   32</a></span>&#160;<span class="keyword">static</span> <a class="code" href="class_color.html">Color</a> <a class="code" href="class_color.html#aeda97541296441f1e45666030c7431aa">Black</a>() {<span class="keywordflow">return</span> <a class="code" href="class_color.html#a9a742cbe9f9f4037f5d9f4e81a9b2428">Color</a>(0, 0, 0, 255);}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_color.html#abfdd1435e207897d6d0f32c190084a8d">   39</a></span>&#160;<span class="keyword">static</span> <a class="code" href="class_color.html">Color</a> <a class="code" href="class_color.html#abfdd1435e207897d6d0f32c190084a8d">White</a>() {<span class="keywordflow">return</span> <a class="code" href="class_color.html#a9a742cbe9f9f4037f5d9f4e81a9b2428">Color</a>(255, 255, 255, 255);}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_color.html#a8ff75f6c1eb2a205ae598c00d1398780">   45</a></span>&#160;<span class="keyword">static</span> <a class="code" href="class_color.html">Color</a> <a class="code" href="class_color.html#a8ff75f6c1eb2a205ae598c00d1398780">Blue</a>() {<span class="keywordflow">return</span> <a class="code" href="class_color.html#a9a742cbe9f9f4037f5d9f4e81a9b2428">Color</a>(0, 0, 255, 255);}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_color.html#a40f0bedb97ba75b7a9d5997d55e11964">   51</a></span>&#160;<span class="keyword">static</span> <a class="code" href="class_color.html">Color</a> <a class="code" href="class_color.html#a40f0bedb97ba75b7a9d5997d55e11964">Red</a>() {<span class="keywordflow">return</span> <a class="code" href="class_color.html#a9a742cbe9f9f4037f5d9f4e81a9b2428">Color</a>(255, 0, 0, 255);}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_color.html#a14259d065b449beae70ab5eef06bd5fa">   57</a></span>&#160;<span class="keyword">static</span> <a class="code" href="class_color.html">Color</a> <a class="code" href="class_color.html#a14259d065b449beae70ab5eef06bd5fa">Green</a>() {<span class="keywordflow">return</span> <a class="code" href="class_color.html#a9a742cbe9f9f4037f5d9f4e81a9b2428">Color</a>(0, 255, 0, 255);}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_color.html#a9a742cbe9f9f4037f5d9f4e81a9b2428">   62</a></span>&#160;<a class="code" href="class_color.html#a9a742cbe9f9f4037f5d9f4e81a9b2428">Color</a>(): <a class="code" href="class_color.html">Color</a>(0){}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_color.html#a4de56ebb4dbe26859894265809841fd2">   68</a></span>&#160;<a class="code" href="class_color.html#a4de56ebb4dbe26859894265809841fd2">Color</a>(uint32_t color): mColor(color){}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<a class="code" href="class_color.html#a9a742cbe9f9f4037f5d9f4e81a9b2428">Color</a>(uint8_t r, uint8_t g, uint8_t b, uint8_t a);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_color.html#a373ed0a24b57710351ba2e0c39981b2f">   83</a></span>&#160;<span class="keyword">inline</span> uint32_t <a class="code" href="class_color.html#a373ed0a24b57710351ba2e0c39981b2f">GetPixelColor</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> mColor;}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<a class="code" href="class_color.html#a9a742cbe9f9f4037f5d9f4e81a9b2428">Color</a>(uint8_t r, uint8_t g, uint8_t b);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GRAPHICS_COLOR_H_ */</span><span class="preprocessor"></span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_color_html"><div class="ttname"><a href="class_color.html">Color</a></div><div class="ttdoc">Klasa reprezentujaca kolor w formacie RGBA.</div><div class="ttdef"><b>Definition:</b> Color.h:13</div></div>
+<div class="ttc" id="aclass_color_html_a8887b697d079877de4861d20f0b9f548"><div class="ttname"><a href="class_color.html#a8887b697d079877de4861d20f0b9f548">Color::mFormat</a></div><div class="ttdeci">static const SDL_PixelFormat * mFormat</div><div class="ttdoc">Format koloru pixeli.</div><div class="ttdef"><b>Definition:</b> Color.h:20</div></div>
+<div class="ttc" id="aclass_color_html_abf0b6ffe5da725a7b5857d7fa873fd7d"><div class="ttname"><a href="class_color.html#abf0b6ffe5da725a7b5857d7fa873fd7d">Color::InitColorFormat</a></div><div class="ttdeci">static void InitColorFormat(const SDL_PixelFormat *format)</div><div class="ttdoc">Inicjalizacja formatu.</div><div class="ttdef"><b>Definition:</b> Color.cpp:13</div></div>
+<div class="ttc" id="aclass_color_html_a40f0bedb97ba75b7a9d5997d55e11964"><div class="ttname"><a href="class_color.html#a40f0bedb97ba75b7a9d5997d55e11964">Color::Red</a></div><div class="ttdeci">static Color Red()</div><div class="ttdoc">Zwraca kolor czerwony.</div><div class="ttdef"><b>Definition:</b> Color.h:51</div></div>
+<div class="ttc" id="aclass_color_html_aeda97541296441f1e45666030c7431aa"><div class="ttname"><a href="class_color.html#aeda97541296441f1e45666030c7431aa">Color::Black</a></div><div class="ttdeci">static Color Black()</div><div class="ttdoc">Zwraca kolor czarny.</div><div class="ttdef"><b>Definition:</b> Color.h:32</div></div>
+<div class="ttc" id="aclass_color_html_a373ed0a24b57710351ba2e0c39981b2f"><div class="ttname"><a href="class_color.html#a373ed0a24b57710351ba2e0c39981b2f">Color::GetPixelColor</a></div><div class="ttdeci">uint32_t GetPixelColor() const</div><div class="ttdoc">Funkcja sprawdzajaca kolor w postaci 32-bitowej liczby calkowitej.</div><div class="ttdef"><b>Definition:</b> Color.h:83</div></div>
+<div class="ttc" id="aclass_color_html_a14259d065b449beae70ab5eef06bd5fa"><div class="ttname"><a href="class_color.html#a14259d065b449beae70ab5eef06bd5fa">Color::Green</a></div><div class="ttdeci">static Color Green()</div><div class="ttdoc">Zwraca kolor zielony.</div><div class="ttdef"><b>Definition:</b> Color.h:57</div></div>
+<div class="ttc" id="aclass_color_html_a9a742cbe9f9f4037f5d9f4e81a9b2428"><div class="ttname"><a href="class_color.html#a9a742cbe9f9f4037f5d9f4e81a9b2428">Color::Color</a></div><div class="ttdeci">Color()</div><div class="ttdoc">Konstruktor.</div><div class="ttdef"><b>Definition:</b> Color.h:62</div></div>
+<div class="ttc" id="aclass_color_html_abfdd1435e207897d6d0f32c190084a8d"><div class="ttname"><a href="class_color.html#abfdd1435e207897d6d0f32c190084a8d">Color::White</a></div><div class="ttdeci">static Color White()</div><div class="ttdoc">Zwraca kolor bialy.</div><div class="ttdef"><b>Definition:</b> Color.h:39</div></div>
+<div class="ttc" id="aclass_color_html_a8ff75f6c1eb2a205ae598c00d1398780"><div class="ttname"><a href="class_color.html#a8ff75f6c1eb2a205ae598c00d1398780">Color::Blue</a></div><div class="ttdeci">static Color Blue()</div><div class="ttdoc">Zwraca kolor niebieski.</div><div class="ttdef"><b>Definition:</b> Color.h:45</div></div>
+<div class="ttc" id="aclass_color_html_a4de56ebb4dbe26859894265809841fd2"><div class="ttname"><a href="class_color.html#a4de56ebb4dbe26859894265809841fd2">Color::Color</a></div><div class="ttdeci">Color(uint32_t color)</div><div class="ttdoc">Konstruktor klasy Color, ktory jako argument przyjmuje 32-bitowa wartosc koloru.</div><div class="ttdef"><b>Definition:</b> Color.h:68</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>
